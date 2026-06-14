@@ -1,0 +1,95 @@
+<style>
+  .nav {
+    background: #2c3e50;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  .nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .nav > ul > li {
+    position: relative;
+  }
+  .nav > ul > li > a {
+    display: block;
+    padding: 14px 22px;
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: background 0.2s;
+  }
+  .nav > ul > li:hover > a {
+    background: #34495e;
+  }
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #34495e;
+    min-width: 200px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 100;
+  }
+  .nav > ul > li:hover .dropdown {
+    display: block;
+  }
+  .dropdown li a {
+    display: block;
+    padding: 10px 18px;
+    color: #bdc3c7;
+    text-decoration: none;
+    font-size: 14px;
+    border-bottom: 1px solid #2c3e50;
+    transition: background 0.2s, color 0.2s;
+  }
+  .dropdown li:last-child a {
+    border-bottom: none;
+  }
+  .dropdown li a:hover {
+    background: #2c3e50;
+    color: #ecf0f1;
+  }
+  .nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #ecf0f1;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 14px 22px;
+  }
+  @media (max-width: 768px) {
+    .nav-toggle { display: block; }
+    .nav > ul {
+      flex-direction: column;
+      display: none;
+    }
+    .nav.open > ul { display: flex; }
+    .dropdown {
+      position: static;
+      box-shadow: none;
+      background: #2c3e50;
+    }
+  }
+</style>
+
+<nav class="nav" id="mainNav">
+  <button class="nav-toggle" onclick="document.getElementById('mainNav').classList.toggle('open')">&#9776;</button>
+  <ul>
+    <li>
+      <a href="/docs/systems/petra.html">Systems</a>
+      <ul class="dropdown">
+        <li><a href="/docs/systems/petra.html">Petra</a></li>
+        <li><a href="/docs/systems/notable-projects.html">Notable Projects</a></li>
+      </ul>
+    </li>
+    <li><a href="/docs/community/index.html">Community</a></li>
+    <li><a href="/docs/contact.html">Contact</a></li>
+  </ul>
+</nav>

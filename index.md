@@ -1,3 +1,8 @@
+---
+layout: default
+title: OSK.Hub
+---
+
 # OSK.Hub
 This repository is the starting point for contributors or anyone looking for an overview of the OSK systems.
 
