@@ -27,7 +27,7 @@
     background: #34495e;
   }
   .dropdown {
-    display: none;
+    display: none !important;
     position: absolute;
     top: 100%;
     left: 0;
@@ -83,13 +83,13 @@
   <button class="nav-toggle" onclick="document.getElementById('mainNav').classList.toggle('open')">&#9776;</button>
   <ul>
     <li>
-      <a href="/docs/systems/petra.html">Systems</a>
+      <a href="{{ '/docs/systems/petra.html' | relative_url }}">Systems</a>
       <ul class="dropdown">
-        <li><a href="/docs/systems/petra.html">Petra</a></li>
-        <li><a href="/docs/systems/notable-projects.html">Notable Projects</a></li>
+        <li><a href="{{ '/docs/systems/petra.html' | relative_url }}">Petra</a></li>
+        <li><a href="{{ '/docs/systems/notable-projects.html' | relative_url }}">Notable Projects</a></li>
       </ul>
     </li>
-    <li><a href="/docs/community/index.html">Community</a></li>
-    <li><a href="/docs/contact.html">Contact</a></li>
+    <li><a href="{{ '/docs/community/index.html' | relative_url }}">Community</a></li>
+    <li><a href="{{ '/docs/contact.html' | relative_url }}">Contact</a></li>
   </ul>
 </nav>
