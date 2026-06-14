@@ -35,6 +35,8 @@
     min-width: 200px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     z-index: 100;
+    padding-top: 14px;
+    margin-top: -14px;
   }
   .nav > ul > li:hover .dropdown {
     display: block;
@@ -83,8 +85,9 @@
   <button class="nav-toggle" onclick="document.getElementById('mainNav').classList.toggle('open')">&#9776;</button>
   <ul>
     <li>
-      <a href="{{ '/docs/systems/petra.html' | relative_url }}">Systems</a>
+      <a href="javascript:void(0)">Systems</a>
       <ul class="dropdown">
+        <li><a href="{{ '/docs/systems/versioning.html' | relative_url }}">Versioning</a></li>
         <li><a href="{{ '/docs/systems/petra.html' | relative_url }}">Petra</a></li>
         <li><a href="{{ '/docs/systems/notable-projects.html' | relative_url }}">Notable Projects</a></li>
       </ul>
