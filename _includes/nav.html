@@ -91,7 +91,7 @@
   <button class="nav-toggle" onclick="document.getElementById('mainNav').classList.toggle('open')">&#9776;</button>
   <ul>
     <li>
-      <button class="nav-parent" onclick="this.parentElement.classList.toggle('hover-active')">Systems</button>
+      <button class="nav-parent" onclick="event.stopPropagation(); this.parentElement.classList.toggle('hover-active')">Systems</button>
       <ul class="dropdown">
         <li><a href="{{ '/docs/systems/versioning.html' | relative_url }}">Versioning</a></li>
         <li><a href="{{ '/docs/systems/petra.html' | relative_url }}">Petra</a></li>
@@ -107,8 +107,8 @@
 document.addEventListener('click', function(e) {
   const nav = document.getElementById('mainNav');
   if (!nav.contains(e.target)) {
-    nav.querySelectorAll('.hover-active')
-      .forEach(el => el.classList.remove('hover-active'));
+    nav.querySelectorAll('.hover-active, .mobile-active')
+      .forEach(el => el.classList.remove('hover-active', 'mobile-active'));
   }
 });
 </script>
