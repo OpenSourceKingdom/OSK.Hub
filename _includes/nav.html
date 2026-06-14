@@ -2,7 +2,7 @@
   .nav {
     background: #2c3e50;
     padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-family: -apple-system, BlinkSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   }
   .nav ul {
     list-style: none;
@@ -14,7 +14,8 @@
   .nav > ul > li {
     position: relative;
   }
-  .nav > ul > li > a {
+  .nav > ul > li > a,
+  .nav-parent {
     display: block;
     padding: 14px 22px;
     color: #ecf0f1;
@@ -22,12 +23,17 @@
     font-size: 15px;
     font-weight: 500;
     transition: background 0.2s;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
   }
-  .nav > ul > li:hover > a {
+  .nav > ul > li:hover > a,
+  .nav > ul > li:hover .nav-parent {
     background: #34495e;
   }
   .dropdown {
-    display: none !important;
+    display: none;
     position: absolute;
     top: 100%;
     left: 0;
@@ -35,8 +41,13 @@
     min-width: 200px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     z-index: 100;
+    padding-top: 14px;
+    margin-top: -14px;
   }
   .nav > ul > li:hover .dropdown {
+    display: block;
+  }
+  .nav > ul > li.hover-active .dropdown {
     display: block;
   }
   .dropdown li a {
@@ -83,13 +94,24 @@
   <button class="nav-toggle" onclick="document.getElementById('mainNav').classList.toggle('open')">&#9776;</button>
   <ul>
     <li>
-      <a href="{{ '/docs/systems/petra.html' | relative_url }}">Systems</a>
+      <button class="nav-parent" onclick="this.parentElement.classList.toggle('hover-active')">Systems</button>
       <ul class="dropdown">
         <li><a href="{{ '/docs/systems/petra.html' | relative_url }}">Petra</a></li>
         <li><a href="{{ '/docs/systems/notable-projects.html' | relative_url }}">Notable Projects</a></li>
+        <li><a href="{{ '/docs/systems/versioning.html' | relative_url }}">Versioning</a></li>
       </ul>
     </li>
     <li><a href="{{ '/docs/community/index.html' | relative_url }}">Community</a></li>
     <li><a href="{{ '/docs/contact.html' | relative_url }}">Contact</a></li>
   </ul>
 </nav>
+
+<script>
+document.addEventListener('click', function(e) {
+  const nav = document.getElementById('mainNav');
+  if (!nav.contains(e.target)) {
+    nav.querySelectorAll('.hover-active')
+      .forEach(el => el.classList.remove('hover-active'));
+  }
+});
+</script>
