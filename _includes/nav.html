@@ -4,16 +4,27 @@
     padding: 0;
     font-family: -apple-system, BlinkSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   }
-  .nav ul {
+
+  /* Only the top-level nav list is flex */
+  .nav > ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
   }
+
+  /* Descendant lists (dropdowns) get no special layout */
+  .nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
   .nav > ul > li {
     position: relative;
   }
+
   .nav > ul > li > a,
   .nav-parent {
     display: block;
@@ -22,16 +33,19 @@
     text-decoration: none;
     font-size: 15px;
     font-weight: 500;
-    transition: background 0.2s;
     background: none;
     border: none;
     cursor: pointer;
     font-family: inherit;
+    transition: background 0.2s;
   }
-  .nav > ul > li:hover > a,
-  .nav > ul > li:hover .nav-parent {
+
+  .nav > ul > li > a:hover,
+  .nav-parent:hover {
     background: #34495e;
   }
+
+  /* Dropdown hidden by default */
   .dropdown {
     display: none;
     position: absolute;
@@ -42,11 +56,16 @@
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     z-index: 100;
     padding-top: 14px;
-    margin-top: -14px;
   }
-  .nav > ul > li.hover-active .dropdown {
+
+  .nav > ul > li.open > .dropdown {
     display: block;
   }
+
+  .dropdown li {
+    display: block;
+  }
+
   .dropdown li a {
     display: block;
     padding: 10px 18px;
@@ -54,61 +73,50 @@
     text-decoration: none;
     font-size: 14px;
     border-bottom: 1px solid #2c3e50;
-    transition: background 0.2s, color 0.2s;
   }
+
   .dropdown li:last-child a {
     border-bottom: none;
   }
+
   .dropdown li a:hover {
     background: #2c3e50;
     color: #ecf0f1;
   }
-  .nav-toggle {
-    display: none;
-    background: none;
-    border: none;
-    color: #ecf0f1;
-    font-size: 24px;
-    cursor: pointer;
-    padding: 14px 22px;
-  }
-  @media (max-width: 768px) {
-    .nav-toggle { display: block; }
-    .nav > ul {
-      flex-direction: column;
-      display: none;
-    }
-    .nav.open > ul { display: flex; }
-    .dropdown {
-      position: static;
-      box-shadow: none;
-      background: #2c3e50;
-    }
-  }
 </style>
 
 <nav class="nav" id="mainNav">
-  <button class="nav-toggle" onclick="document.getElementById('mainNav').classList.toggle('open')">&#9776;</button>
   <ul>
-    <li>
-      <button class="nav-parent" onclick="event.stopPropagation(); this.parentElement.classList.toggle('hover-active')">Systems</button>
+    <li id="systemsMenu">
+      <button type="button" class="nav-parent">Systems</button>
+
       <ul class="dropdown">
         <li><a href="{{ '/docs/systems/versioning.html' | relative_url }}">Versioning</a></li>
         <li><a href="{{ '/docs/systems/petra.html' | relative_url }}">Petra</a></li>
         <li><a href="{{ '/docs/systems/notable-projects.html' | relative_url }}">Notable Projects</a></li>
       </ul>
     </li>
-    <li><a href="{{ '/docs/community/index.html' | relative_url }}">Community</a></li>
-    <li><a href="{{ '/docs/contact.html' | relative_url }}">Contact</a></li>
+
+    <li>
+      <a href="{{ '/docs/community/index.html' | relative_url }}">Community</a>
+    </li>
+
+    <li>
+      <a href="{{ '/docs/contact.html' | relative_url }}">Contact</a>
+    </li>
   </ul>
 </nav>
 
 <script>
-document.addEventListener('click', function(e) {
-  const nav = document.getElementById('mainNav');
-  if (!nav.contains(e.target)) {
-    nav.querySelectorAll('.hover-active, .mobile-active')
-      .forEach(el => el.classList.remove('hover-active', 'mobile-active'));
-  }
-});
+  const systemsMenu = document.getElementById('systemsMenu');
+  const systemsButton = systemsMenu.querySelector('.nav-parent');
+
+  systemsButton.addEventListener('click', function(event) {
+    event.stopPropagation();
+    systemsMenu.classList.toggle('open');
+  });
+
+  document.addEventListener('click', function() {
+    systemsMenu.classList.remove('open');
+  });
 </script>
