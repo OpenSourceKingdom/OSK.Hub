@@ -45,6 +45,20 @@
     background: #34495e;
   }
 
+  /* Active state for top-level nav items */
+  .nav > ul > li > a.active,
+  .nav-parent.active {
+    background: #34495e;
+    border-bottom: 2px solid #3498db;
+  }
+
+  /* Active state for dropdown items */
+  .dropdown li a.active {
+    background: #2c3e50;
+    color: #ecf0f1;
+    font-weight: 500;
+  }
+
   /* Dropdown hidden by default */
   .dropdown {
     display: none;
@@ -88,21 +102,21 @@
 <nav class="nav" id="mainNav">
   <ul>
     <li id="systemsMenu">
-      <button type="button" class="nav-parent">Systems</button>
+      <button type="button" class="nav-parent{% if page.section == 'petra' or page.section == 'notable-projects' %} active{% endif %}">Systems</button>
 
       <ul class="dropdown">
-        <li><a href="{{ '/docs/systems/versioning.html' | relative_url }}">Versioning</a></li>
-        <li><a href="{{ '/docs/systems/petra.html' | relative_url }}">Petra</a></li>
-        <li><a href="{{ '/docs/systems/notable-projects.html' | relative_url }}">Notable Projects</a></li>
+        <li><a href="{{ '/docs/systems/versioning.html' | relative_url }}"{% if page.url contains '/docs/systems/versioning' %} class="active"{% endif %}>Versioning</a></li>
+        <li><a href="{{ '/docs/systems/petra.html' | relative_url }}"{% if page.url contains '/docs/systems/petra' %} class="active"{% endif %}>Petra</a></li>
+        <li><a href="{{ '/docs/systems/notable-projects.html' | relative_url }}"{% if page.url contains '/docs/systems/notable' %} class="active"{% endif %}>Notable Projects</a></li>
       </ul>
     </li>
 
     <li>
-      <a href="{{ '/docs/community/index.html' | relative_url }}">Community</a>
+      <a href="{{ '/docs/community/index.html' | relative_url }}"{% if page.section == 'community' %} class="active"{% endif %}>Community</a>
     </li>
 
     <li>
-      <a href="{{ '/docs/contact.html' | relative_url }}">Contact</a>
+      <a href="{{ '/docs/contact.html' | relative_url }}"{% if page.section == 'contact' %} class="active"{% endif %}>Contact</a>
     </li>
   </ul>
 </nav>
