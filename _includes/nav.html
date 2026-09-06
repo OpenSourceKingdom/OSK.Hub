@@ -102,12 +102,12 @@
 <nav class="nav" id="mainNav">
   <ul>
     <li id="systemsMenu">
-      <button type="button" class="nav-parent{% if page.section == 'petra' or page.section == 'notable-projects' %} active{% endif %}">Systems</button>
+      <button type="button" class="nav-parent{% if page.section == 'petra' or page.section == 'highlights' %} active{% endif %}">Systems</button>
 
       <ul class="dropdown">
         <li><a href="{{ '/docs/systems/versioning.html' | relative_url }}"{% if page.url contains '/docs/systems/versioning' %} class="active"{% endif %}>Versioning</a></li>
-        <li><a href="{{ '/docs/systems/petra.html' | relative_url }}"{% if page.url contains '/docs/systems/petra' %} class="active"{% endif %}>Petra</a></li>
-        <li><a href="{{ '/docs/systems/notable-projects.html' | relative_url }}"{% if page.url contains '/docs/systems/notable' %} class="active"{% endif %}>Notable Projects</a></li>
+        <li><a href="{{ '/docs/systems/petra/overview.html' | relative_url }}"{% if page.section == 'petra' %} class="active"{% endif %}>Petra</a></li>
+        <li><a href="{{ '/docs/systems/highlights/' | relative_url }}"{% if page.section == 'highlights' %} class="active"{% endif %}>Highlights</a></li>
       </ul>
     </li>
 
