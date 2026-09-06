@@ -58,11 +58,24 @@
     font-weight: 600;
   }
 
-  /* Parent entries with subpages — subtle left border tint */
+  /* Parent entries with subpages — visually distinct */
   .sidebar li.sidebar-group > a {
     font-weight: 700;
-    color: #343a40;
-    border-left-color: #868e96;
+    color: #212529;
+    border-left-color: transparent;
+    cursor: default;
+    background: #e2e6ea;
+  }
+
+  .sidebar li.sidebar-group:hover > a {
+    background: #dee2e6;
+    color: #212529;
+  }
+
+  .sidebar li.sidebar-group.active > a {
+    background: #dbeafe;
+    color: #1d4ed8;
+    border-left-color: #2563eb;
   }
 
   /* Subpage bullets */
@@ -121,7 +134,7 @@
     {% for sectionPage in section.pages %}
       {% if sectionPage.subpages %}
       <li class="sidebar-group"{% if page.url == sectionPage.url %} active{% endif %}>
-        <a href="{{ sectionPage.url | relative_url }}">
+        <a>
           {{ sectionPage.title | default: sectionPage.page-id }}
         </a>
         <ul>
