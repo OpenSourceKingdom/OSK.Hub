@@ -1,7 +1,7 @@
 ---
 layout: default
 section-id: highlights
-page-id: DeepEquals
+page-id: deep-equals
 ---
 
 # DeepEquals
