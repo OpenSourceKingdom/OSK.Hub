@@ -41,7 +41,7 @@
      Normal top-level pages
      -------------------------------- */
 
-  .sidebar > ul > li > a {
+  .sidebar-link {
     display: block;
     padding: 8px 20px;
     color: #495057;
@@ -51,12 +51,12 @@
     transition: background 0.15s, color 0.15s;
   }
 
-  .sidebar > ul > li > a:hover {
+  .sidebar-link:hover {
     background: #e9ecef;
     color: #212529;
   }
 
-  .sidebar > ul > li.active > a {
+  .sidebar-item.active > .sidebar-link {
     background: #dbeafe;
     color: #1d4ed8;
     border-left-color: #2563eb;
@@ -64,10 +64,10 @@
   }
 
   /* --------------------------------
-      Parent pages / groups (Distinct Header Style)
-      -------------------------------- */
+     Parent sections with subpages
+     -------------------------------- */
 
-   .sidebar li.sidebar-group {
+  .sidebar-parent {
     margin: 14px 10px 8px;
     background: #e2e8f0;
     border: 1px solid #cbd5e1;
@@ -75,48 +75,43 @@
     overflow: hidden;
   }
 
-   /* Distinct non-clickable parent block */
-   .sidebar li.sidebar-group > .sidebar-group-title {
+  .sidebar-parent-label {
     display: flex;
     align-items: center;
     padding: 10px 12px;
-    background: #66708c;
-    color: #ffffff;
-    font-size: 13px;
+    background: #cbd5e1;
+    color: #0f172a;
+    font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     cursor: default;
     user-select: none;
-    transition: background 0.15s;
   }
 
-   /* Chevron indicator showing this section has subpages */
-   .sidebar li.sidebar-group > .sidebar-group-title::before {
-    content: "▾";
+  .sidebar-parent-label::before {
+    content: "📁";
     margin-right: 8px;
-    font-size: 12px;
-    color: #f8fafc;
-    opacity: 0.8;
+    font-size: 11px;
   }
 
-   /* Active parent state */
-   .sidebar li.sidebar-group.active > .sidebar-group-title {
-    background: #3b82f6;
-    color: #ffffff;
+  .sidebar-parent.active > .sidebar-parent-label {
+    background: #93c5fd;
+    color: #1e3a8a;
+    border-bottom: 1px solid #60a5fa;
   }
 
   /* --------------------------------
-     Subpages (Indented inside the group card)
+     Subpages (Indented with dedicated class)
      -------------------------------- */
 
-  .sidebar li.sidebar-group > ul {
+  .sidebar-subpage-list {
     margin: 0;
     padding: 4px 0;
-    background: #ffffff; /* Contrast white background for child list */
+    background: #ffffff;
   }
 
-  .sidebar li.sidebar-group > ul li a {
+  .sidebar-subpage-link {
     display: block;
     position: relative;
     padding: 7px 12px 7px 28px;
@@ -127,27 +122,26 @@
     transition: background 0.15s, color 0.15s;
   }
 
-  /* Visual bullet connector for subpages */
-  .sidebar li.sidebar-group > ul li a::before {
+  .sidebar-subpage-link::before {
     content: "↳";
     position: absolute;
     left: 12px;
     color: #94a3b8;
   }
 
-  .sidebar li.sidebar-group > ul li a:hover {
+  .sidebar-subpage-link:hover {
     background: #f1f5f9;
     color: #1e293b;
   }
 
-  .sidebar li.sidebar-group > ul li.active a {
+  .sidebar-subpage.active .sidebar-subpage-link {
     background: #eff6ff;
     color: #1d4ed8;
     border-left-color: #3b82f6;
     font-weight: 600;
   }
 
-  .sidebar li.sidebar-group > ul li.active a::before {
+  .sidebar-subpage.active .sidebar-subpage-link::before {
     color: #3b82f6;
   }
 </style>
@@ -166,28 +160,26 @@
 
       {% if sectionPage.subpages %}
 
-        <li class="sidebar-group{% if page.url == sectionPage.url %} active{% endif %}">
-
-          <div class="sidebar-group-title">
+        <li class="sidebar-parent{% if page.url == sectionPage.url %} active{% endif %}">
+          <div class="sidebar-parent-label">
             {{ sectionPage.title | default: sectionPage.page-id }}
           </div>
 
-          <ul>
+          <ul class="sidebar-subpage-list">
             {% for subpage in sectionPage.subpages %}
-              <li{% if page.url == subpage.url %} class="active"{% endif %}>
-                <a href="{{ subpage.url | relative_url }}">
+              <li class="sidebar-subpage{% if page.url == subpage.url %} active{% endif %}">
+                <a href="{{ subpage.url | relative_url }}" class="sidebar-subpage-link">
                   {{ subpage.title | default: subpage.page-id }}
                 </a>
               </li>
             {% endfor %}
           </ul>
-
         </li>
 
       {% else %}
 
-        <li{% if page.url == sectionPage.url %} class="active"{% endif %}>
-          <a href="{{ sectionPage.url | relative_url }}">
+        <li class="sidebar-item{% if page.url == sectionPage.url %} active{% endif %}">
+          <a href="{{ sectionPage.url | relative_url }}" class="sidebar-link">
             {{ sectionPage.title | default: sectionPage.page-id }}
           </a>
         </li>
