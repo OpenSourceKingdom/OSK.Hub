@@ -1,3 +1,4 @@
 title: OSK.Hub
 description: Central location for broader OSK system documentation, getting started wtih contributing, and the like
 baseurl: /OSK.Hub
+permalink: /:path/:basename.html

@@ -36,10 +36,9 @@
   footer { text-align: center; padding: 32px; color: #7f8c8d; font-size: 13px; }
 </style>
 
-<a href="{{ '/' | relative_url }}" style="display:flex;align-items:center;">
-  <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="OSK Logo">
+<div class="header">
+  <a href="{{ '/' | relative_url }}" class="logo-link"><img src="{{ '/assets/images/logo.png' | relative_url }}" alt="OSK Logo" style="height:36px;width:auto;"></a>
   <span>{{ site.title }}</span>
-</a>
 </div>
 
 {% include nav.html %}
