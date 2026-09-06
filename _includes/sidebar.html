@@ -64,10 +64,10 @@
   }
 
   /* --------------------------------
-     Parent pages / groups (Distinct Header Style)
-     -------------------------------- */
+      Parent pages / groups (Distinct Header Style)
+      -------------------------------- */
 
-  .sidebar li.sidebar-group {
+   .sidebar li.sidebar-group {
     margin: 14px 10px 8px;
     background: #e2e8f0;
     border: 1px solid #cbd5e1;
@@ -75,33 +75,35 @@
     overflow: hidden;
   }
 
-  /* Distinct non-clickable parent block */
-  .sidebar li.sidebar-group > .sidebar-group-title {
+   /* Distinct non-clickable parent block */
+   .sidebar li.sidebar-group > .sidebar-group-title {
     display: flex;
     align-items: center;
     padding: 10px 12px;
-    background: #cbd5e1;
-    color: #0f172a;
-    font-size: 12px;
+    background: #66708c;
+    color: #ffffff;
+    font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     cursor: default;
     user-select: none;
+    transition: background 0.15s;
   }
 
-  /* Add a small folder/category icon indicator using CSS */
-  .sidebar li.sidebar-group > .sidebar-group-title::before {
-    content: "📁";
+   /* Chevron indicator showing this section has subpages */
+   .sidebar li.sidebar-group > .sidebar-group-title::before {
+    content: "▾";
     margin-right: 8px;
-    font-size: 11px;
+    font-size: 12px;
+    color: #f8fafc;
+    opacity: 0.8;
   }
 
-  /* Active parent state */
-  .sidebar li.sidebar-group.active > .sidebar-group-title {
-    background: #93c5fd;
-    color: #1e3a8a;
-    border-bottom: 1px solid #60a5fa;
+   /* Active parent state */
+   .sidebar li.sidebar-group.active > .sidebar-group-title {
+    background: #3b82f6;
+    color: #ffffff;
   }
 
   /* --------------------------------
