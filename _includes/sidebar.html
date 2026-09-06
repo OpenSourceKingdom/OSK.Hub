@@ -57,6 +57,44 @@
     border-left-color: #2563eb;
     font-weight: 600;
   }
+
+  .sidebar ul ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .sidebar ul ul li a {
+    display: block;
+    padding: 6px 20px 6px 36px;
+    color: #6c757d;
+    text-decoration: none;
+    font-size: 13px;
+    border-left: 3px solid transparent;
+    transition: background 0.15s, color 0.15s;
+  }
+
+  .sidebar ul ul li a:hover {
+    background: #e9ecef;
+    color: #212529;
+  }
+
+  .sidebar ul ul li.active a {
+    background: #dbeafe;
+    color: #1d4ed8;
+    border-left-color: #2563eb;
+    font-weight: 600;
+  }
+
+  .sidebar .subpage-label {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #adb5bd;
+    padding: 8px 20px 4px;
+    margin-top: 4px;
+  }
 </style>
 
 <nav class="sidebar">
@@ -72,6 +110,17 @@
         <a href="{{ sectionPage.url | relative_url }}">
           {{ sectionPage.title | default: sectionPage.page-id }}
         </a>
+        {% if sectionPage.subpages %}
+        <ul>
+          {% for subpage in sectionPage.subpages %}
+            <li{% if page.url == subpage.url %} class="active"{% endif %}>
+              <a href="{{ subpage.url | relative_url }}">
+                {{ subpage.title | default: subpage.page-id }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+        {% endif %}
       </li>
     {% endfor %}
   </ul>

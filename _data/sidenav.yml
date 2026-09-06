@@ -1,44 +1,46 @@
 ﻿petra:
   title: Petra
   pages:
-    - page-id: Overview
+    - page-id: overview
       url: /docs/systems/petra/overview
-    - page-id: Framework
+    - page-id: framework
       url: /docs/systems/petra/framework
-    - page-id: Modules
+    - page-id: modules
       url: /docs/systems/petra/modules
-    - page-id: Inputs
-      url: /docs/systems/petra/inputs
-    - page-id: Provisions
+    - page-id: inputs
+      title: Inputs
+      subpages:
+        - page-id: architecture
+          url: /docs/systems/petra/inputs/architecture
+    - page-id: provisions
       url: /docs/systems/petra/provisions
-    - page-id: Roadmap
+    - page-id: roadmap
       url: /docs/systems/petra/roadmap
 
 highlights:
   title: Highlights
   pages:
-    - page-id: Overview
+    - page-id: overview
       url: /docs/systems/highlights/overview
     - page-id: deep-equals
       title: Deep Equals
       url: /docs/systems/highlights/deep-equals
-    - page-id: Outputs
+    - page-id: outputs
       url: /docs/systems/highlights/outputs
-    - page-id: Messages
+    - page-id: messages
       url: /docs/systems/highlights/messages
-    - page-id: Cryptography
+    - page-id: cryptography
       url: /docs/systems/highlights/cryptography
     - page-id: storage-service
       title: Storage Service
-      url: /docs/systems/highlights/storage-service
     - page-id: uml-diagrams
       title: UML Diagrams
       url: /docs/systems/highlights/uml-diagrams
-    - page-id: Invoker
+    - page-id: invoker
       url: /docs/systems/highlights/invoker
 
-contact:
-  title: Contact
+about:
+  title: About OSK
   pages:
     - page-id: contact
       title: Get In Touch
@@ -47,5 +49,5 @@ contact:
 community:
   title: Community
   pages:
-    - page-id: Guidance
+    - page-id: guidance
       url: /docs/community/guidance
