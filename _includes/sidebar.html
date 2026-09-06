@@ -57,7 +57,7 @@
   <div class="sidebar-title">{{ section.title }}</div>
   <ul>
     {% for item in section.pages %}
-    <li{% if page.url | replace: site.baseurl, '' == item.url %} class="active"{% endif %}>
+    <li{% if page.url contains item.url %} class="active"{% endif %}>
       <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
     </li>
     {% endfor %}
