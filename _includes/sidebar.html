@@ -48,9 +48,7 @@
     text-decoration: none;
     font-size: 14px;
     border-left: 3px solid transparent;
-    transition:
-      background 0.15s,
-      color 0.15s;
+    transition: background 0.15s, color 0.15s;
   }
 
   .sidebar > ul > li > a:hover {
@@ -66,82 +64,89 @@
   }
 
   /* --------------------------------
-     Parent pages / groups
+     Parent pages / groups (Distinct Header Style)
      -------------------------------- */
 
   .sidebar li.sidebar-group {
-    margin: 10px 8px 6px;
-    border-radius: 5px;
+    margin: 14px 10px 8px;
+    background: #e2e8f0;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
     overflow: hidden;
   }
 
-  /* Parent acts as a non-clickable heading */
+  /* Distinct non-clickable parent block */
   .sidebar li.sidebar-group > .sidebar-group-title {
-    display: block;
-    padding: 9px 14px;
-    background: #cbd5e1; /* Enhanced distinct tint for parents */
-    color: #1e293b;
-    font-size: 13px;
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+    background: #cbd5e1;
+    color: #0f172a;
+    font-size: 12px;
     font-weight: 700;
-    letter-spacing: 0.1px;
-    border-left: 3px solid #64748b;
-    cursor: default; /* Ensures no mouse pointer */
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: default;
     user-select: none;
   }
 
-  /* Give an active parent a stronger tint */
+  /* Add a small folder/category icon indicator using CSS */
+  .sidebar li.sidebar-group > .sidebar-group-title::before {
+    content: "📁";
+    margin-right: 8px;
+    font-size: 11px;
+  }
+
+  /* Active parent state */
   .sidebar li.sidebar-group.active > .sidebar-group-title {
-    background: #bfdbfe;
-    color: #1e40af;
-    border-left-color: #2563eb;
+    background: #93c5fd;
+    color: #1e3a8a;
+    border-bottom: 1px solid #60a5fa;
   }
 
   /* --------------------------------
-     Subpages (Indented & Nested)
+     Subpages (Indented inside the group card)
      -------------------------------- */
 
   .sidebar li.sidebar-group > ul {
     margin: 0;
-    padding: 4px 0 6px 0;
-    background: #f8fafc;
-    border-left: 3px solid #cbd5e1;
+    padding: 4px 0;
+    background: #ffffff; /* Contrast white background for child list */
   }
 
   .sidebar li.sidebar-group > ul li a {
     display: block;
     position: relative;
-    padding: 6px 12px 6px 32px; /* Increased left padding for deeper indentation */
-    color: #64748b;
+    padding: 7px 12px 7px 28px;
+    color: #475569;
     text-decoration: none;
     font-size: 13px;
     border-left: 3px solid transparent;
-    transition:
-      background 0.15s,
-      color 0.15s;
+    transition: background 0.15s, color 0.15s;
   }
 
-  /* Small visual connector for child pages */
+  /* Visual bullet connector for subpages */
   .sidebar li.sidebar-group > ul li a::before {
-    content: "–";
+    content: "↳";
     position: absolute;
-    left: 15px; /* Pushed out to match new padding */
+    left: 12px;
     color: #94a3b8;
   }
 
   .sidebar li.sidebar-group > ul li a:hover {
-    background: #eef2f7;
-    color: #334155;
+    background: #f1f5f9;
+    color: #1e293b;
   }
 
   .sidebar li.sidebar-group > ul li.active a {
     background: #eff6ff;
     color: #1d4ed8;
-    border-left-color: #60a5fa;
+    border-left-color: #3b82f6;
     font-weight: 600;
   }
 
   .sidebar li.sidebar-group > ul li.active a::before {
-    color: #2563eb;
+    color: #3b82f6;
   }
 </style>
 
