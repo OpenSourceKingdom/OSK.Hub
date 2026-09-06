@@ -71,42 +71,50 @@
      margin-bottom: 2px;
    }
 
-   /* Parent section title block */
-    .sidebar li.sidebar-group > .sidebar-group-title {
-     display: flex;
-     align-items: center;
-     padding: 10px 12px;
-     background: #36405a;
-     color: #ffffff;
-     font-size: 13px;
-     font-weight: 700;
-     text-transform: uppercase;
-     letter-spacing: 0.5px;
-     text-decoration: none;
-     transition: background 0.15s, color 0.15s;
-   }
+    /* Parent section title block */
+     .sidebar li.sidebar-group > .sidebar-group-title {
+      display: flex;
+      align-items: center;
+      padding: 10px 12px;
+      background: #36405a;
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      transition: background 0.15s, color 0.15s;
+    }
 
      .sidebar li.sidebar-group.has-children > .sidebar-group-title {
-      cursor: pointer;
+      cursor: default;
       user-select: none;
     }
 
-    .sidebar li.sidebar-group.has-children > .sidebar-group-title:hover {
-      background: #4a5568;
-    }
-
-   /* Non-subpage items — lighter card style */
-    .sidebar li.sidebar-group:not(.has-children) > .sidebar-group-title {
-      background: #e9ecef;
-      color: #495057;
+    /* Non-subpage items — lighter card style */
+    .sidebar li.sidebar-group:not(.has-children) > a.sidebar-group-title {
+      background: #e9ecef !important;
+      color: #495057 !important;
       font-weight: 600;
       border: 1px solid #ced4da;
       border-radius: 4px;
     }
 
-    .sidebar li.sidebar-group:not(.has-children) > .sidebar-group-title:hover {
-      background: #dee2e6;
-      color: #212529;
+    .sidebar li.sidebar-group:not(.has-children) > a.sidebar-group-title:hover {
+      background: #dee2e6 !important;
+      color: #212529 !important;
+    }
+
+    /* Non-subpage active state — persist highlight on hover */
+    .sidebar li.sidebar-group:not(.has-children).active > a.sidebar-group-title {
+      background: #dbeafe !important;
+      color: #1d4ed8 !important;
+      border-color: #2563eb !important;
+    }
+
+    .sidebar li.sidebar-group:not(.has-children).active > a.sidebar-group-title:hover {
+      background: #bfdbfe !important;
+      color: #1e40af !important;
+      border-color: #2563eb !important;
     }
 
    /* Chevron indicator showing this section has subpages */
@@ -186,9 +194,9 @@
 
         <li class="sidebar-group has-children{% if page.url == sectionPage.url %} active{% endif %}">
 
-          <a href="{{ sectionPage.url | relative_url }}" class="sidebar-group-title">
+          <div class="sidebar-group-title">
             {{ sectionPage.title | default: sectionPage.page-id }}
-          </a>
+          </div>
 
           <ul>
             {% for subpage in sectionPage.subpages %}
