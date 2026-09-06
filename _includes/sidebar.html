@@ -60,6 +60,13 @@
 </style>
 
 <nav class="sidebar">
+
+  <div style="background: yellow; color: black; padding: 10px; margin: 10px;">
+    PAGE URL: {{ page.url }}<br>
+    PAGE RELATIVE URL: {{ page.url | relative_url }}<br>
+    BASE URL: {{ site.baseurl }}
+  </div>
+
   <div class="sidebar-header">Pages</div>
 
   <div class="sidebar-title">
