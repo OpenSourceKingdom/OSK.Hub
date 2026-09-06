@@ -60,6 +60,7 @@
 </style>
 
 <nav class="sidebar">
+
   <div class="sidebar-header">Pages</div>
 
   <div class="sidebar-title">
@@ -69,17 +70,18 @@
   <ul>
     {% for item in section.pages %}
 
-      {% assign current_url = page.url | remove: '.html' | remove: '/' %}
-      {% assign item_url = item.url | remove: '.html' | remove: '/' %}
+      {% assign nav_url = item.url | relative_url %}
+      {% assign current_url = page.url | relative_url %}
 
-      <li{% if current_url == item_url %} class="active"{% endif %}>
-        <a href="{{ item.url | relative_url }}">
+      <li{% if current_url == nav_url %} class="active"{% endif %}>
+        <a href="{{ nav_url }}">
           {{ item.title }}
         </a>
       </li>
 
     {% endfor %}
   </ul>
+
 </nav>
 
 {% endif %}
