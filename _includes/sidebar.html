@@ -1,4 +1,5 @@
-{% assign sectionKey = page.section-id %}{% assign section = site.data.sidenav[sectionKey] %}
+{% assign sectionKey = page.section-id %}
+{% assign section = site.data.sidenav[sectionKey] %}
 
 {% if section %}
 
@@ -36,95 +37,116 @@
     padding: 0;
   }
 
-  .sidebar li a {
+  /* --------------------------------
+     Normal top-level pages
+     -------------------------------- */
+
+  .sidebar > ul > li > a {
     display: block;
     padding: 8px 20px;
     color: #495057;
     text-decoration: none;
     font-size: 14px;
     border-left: 3px solid transparent;
-    transition: background 0.15s, color 0.15s;
+    transition:
+      background 0.15s,
+      color 0.15s;
   }
 
-  .sidebar li a:hover {
+  .sidebar > ul > li > a:hover {
     background: #e9ecef;
     color: #212529;
   }
 
-  .sidebar li.active a {
+  .sidebar > ul > li.active > a {
     background: #dbeafe;
     color: #1d4ed8;
     border-left-color: #2563eb;
     font-weight: 600;
   }
 
-  /* Parent entries with subpages — visually distinct */
-  .sidebar li.sidebar-group > a {
+  /* --------------------------------
+     Parent pages / groups
+     -------------------------------- */
+
+  .sidebar li.sidebar-group {
+    margin: 10px 8px 6px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  /* Parent acts as a heading, not a link */
+  .sidebar li.sidebar-group > .sidebar-group-title {
+    display: block;
+    padding: 8px 12px;
+    background: #e2e8f0;
+    color: #334155;
+    font-size: 13px;
     font-weight: 700;
-    color: #212529;
-    border-left-color: transparent;
-    cursor: default;
-    background: #e2e6ea;
+    letter-spacing: 0.1px;
+    border-left: 3px solid #94a3b8;
   }
 
-  .sidebar li.sidebar-group:hover > a {
-    background: #dee2e6;
-    color: #212529;
-  }
-
-  .sidebar li.sidebar-group.active > a {
+  /* Give an active parent a stronger tint */
+  .sidebar li.sidebar-group.active > .sidebar-group-title {
     background: #dbeafe;
-    color: #1d4ed8;
+    color: #1e40af;
     border-left-color: #2563eb;
   }
 
-  /* Subpage bullets */
-  .sidebar ul ul li a::before {
-    content: "– ";
-    color: #adb5bd;
-  }
+  /* --------------------------------
+     Subpages
+     -------------------------------- */
 
-  .sidebar ul ul {
-    list-style: none;
+  .sidebar li.sidebar-group > ul {
     margin: 0;
-    padding: 0;
+    padding: 3px 0 5px 0;
+    background: #f8fafc;
+    border-left: 3px solid #cbd5e1;
   }
 
-  .sidebar ul ul li a {
+  .sidebar li.sidebar-group > ul li a {
     display: block;
-    padding: 6px 20px 6px 36px;
-    color: #6c757d;
+    position: relative;
+    padding: 6px 12px 6px 25px;
+    color: #64748b;
     text-decoration: none;
     font-size: 13px;
     border-left: 3px solid transparent;
-    transition: background 0.15s, color 0.15s;
+    transition:
+      background 0.15s,
+      color 0.15s;
   }
 
-  .sidebar ul ul li a:hover {
-    background: #e9ecef;
-    color: #212529;
+  /* Small visual connector for child pages */
+  .sidebar li.sidebar-group > ul li a::before {
+    content: "–";
+    position: absolute;
+    left: 11px;
+    color: #94a3b8;
   }
 
-  .sidebar ul ul li.active a {
-    background: #dbeafe;
+  .sidebar li.sidebar-group > ul li a:hover {
+    background: #eef2f7;
+    color: #334155;
+  }
+
+  .sidebar li.sidebar-group > ul li.active a {
+    background: #eff6ff;
     color: #1d4ed8;
-    border-left-color: #2563eb;
+    border-left-color: #60a5fa;
     font-weight: 600;
   }
 
-  .sidebar .subpage-label {
-    font-size: 11px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    color: #adb5bd;
-    padding: 8px 20px 4px;
-    margin-top: 4px;
+  .sidebar li.sidebar-group > ul li.active a::before {
+    color: #2563eb;
   }
 </style>
 
 <nav class="sidebar">
-  <div class="sidebar-header">{{ section.header ?? "Content" }}</div>
+  <div class="sidebar-header">
+    {{ section.header | default: "Content" }}
+  </div>
 
   <div class="sidebar-title">
     {{ section.title }}
@@ -132,28 +154,37 @@
 
   <ul>
     {% for sectionPage in section.pages %}
+
       {% if sectionPage.subpages %}
-      <li class="sidebar-group"{% if page.url == sectionPage.url %} active{% endif %}>
-        <a>
-          {{ sectionPage.title | default: sectionPage.page-id }}
-        </a>
-        <ul>
-          {% for subpage in sectionPage.subpages %}
-            <li{% if page.url == subpage.url %} class="active"{% endif %}>
-              <a href="{{ subpage.url | relative_url }}">
-                {{ subpage.title | default: subpage.page-id }}
-              </a>
-            </li>
-          {% endfor %}
-        </ul>
-      </li>
+
+        <li class="sidebar-group{% if page.url == sectionPage.url %} active{% endif %}">
+
+          <div class="sidebar-group-title">
+            {{ sectionPage.title | default: sectionPage.page-id }}
+          </div>
+
+          <ul>
+            {% for subpage in sectionPage.subpages %}
+              <li{% if page.url == subpage.url %} class="active"{% endif %}>
+                <a href="{{ subpage.url | relative_url }}">
+                  {{ subpage.title | default: subpage.page-id }}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+
+        </li>
+
       {% else %}
-      <li{% if page.url == sectionPage.url %} class="active"{% endif %}>
-        <a href="{{ sectionPage.url | relative_url }}">
-          {{ sectionPage.title | default: sectionPage.page-id }}
-        </a>
-      </li>
+
+        <li{% if page.url == sectionPage.url %} class="active"{% endif %}>
+          <a href="{{ sectionPage.url | relative_url }}">
+            {{ sectionPage.title | default: sectionPage.page-id }}
+          </a>
+        </li>
+
       {% endif %}
+
     {% endfor %}
   </ul>
 </nav>
