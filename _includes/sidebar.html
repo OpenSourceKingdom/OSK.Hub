@@ -58,6 +58,24 @@
     font-weight: 600;
   }
 
+  /* Parent entries with subpages — not clickable */
+  .sidebar li.sidebar-group a {
+    font-weight: 600;
+    color: #495057;
+    transition: none;
+  }
+
+  .sidebar li.sidebar-group a:hover {
+    background: transparent;
+    color: #495057;
+  }
+
+  .sidebar li.sidebar-group.active a {
+    background: #dbeafe;
+    color: #1d4ed8;
+    border-left-color: #2563eb;
+  }
+
   .sidebar ul ul {
     list-style: none;
     margin: 0;
@@ -106,8 +124,8 @@
 
   <ul>
     {% for sectionPage in section.pages %}
-      <li{% if page.url == sectionPage.url %} class="active"{% endif %}>
-        <a href="{{ sectionPage.url | relative_url }}">
+      <li class="sidebar-group"{% if page.url == sectionPage.url %} active{% endif %}>
+        <a>
           {{ sectionPage.title | default: sectionPage.page-id }}
         </a>
         {% if sectionPage.subpages %}
