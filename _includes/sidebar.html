@@ -58,10 +58,17 @@
     font-weight: 600;
   }
 
-  /* Parent entries with subpages — visually distinct */
+  /* Parent entries with subpages — subtle left border tint */
   .sidebar li.sidebar-group > a {
     font-weight: 700;
     color: #343a40;
+    border-left-color: #868e96;
+  }
+
+  /* Subpage bullets */
+  .sidebar ul ul li a::before {
+    content: "– ";
+    color: #adb5bd;
   }
 
   .sidebar ul ul {
@@ -114,7 +121,7 @@
     {% for sectionPage in section.pages %}
       {% if sectionPage.subpages %}
       <li class="sidebar-group"{% if page.url == sectionPage.url %} active{% endif %}>
-        <a>
+        <a href="{{ sectionPage.url | relative_url }}">
           {{ sectionPage.title | default: sectionPage.page-id }}
         </a>
         <ul>

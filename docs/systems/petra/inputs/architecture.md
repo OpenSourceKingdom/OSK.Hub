@@ -1,7 +1,7 @@
 ---
 layout: default
 section-id: petra
-page-id: architecture
+page-id: Architecture
 ---
 
 # Architecture
