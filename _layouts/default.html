@@ -21,15 +21,10 @@
     font-size: 18px;
     font-weight: 600;
   }
-  .page-layout {
-    display: flex;
-    min-height: calc(100vh - 120px);
-  }
   main {
-    margin: 0;
-    padding: 40px 32px;
-    flex: 1;
-    min-width: 0;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 24px;
   }
   h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 8px; }
   h2 { color: #34495e; margin-top: 32px; }
@@ -37,10 +32,7 @@
   th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid #dee2e6; }
   th { background: #f1f3f5; color: #495057; font-weight: 600; }
   a { color: #2980b9; }
-  footer { text-align: center; padding: 32px; color: #7f8c8d; font-size: 13px; border-top: 1px solid #dee2e6; background: #fff; }
-  @media (max-width: 768px) {
-    .page-layout { flex-direction: column; }
-  }
+  footer { text-align: center; padding: 32px; color: #7f8c8d; font-size: 13px; }
 </style>
 
 <div class="header">
@@ -50,12 +42,18 @@
 
 {% include nav.html %}
 
-<div class="page-layout">
+{% if page.section and site.data.sidenav[page.section] %}
+<div style="display:flex;min-height:calc(100vh - 120px);">
   {% include sidebar.html %}
-  <main>
+  <main style="flex:1;min-width:0;margin:0;padding:40px 32px;">
     {{ content }}
   </main>
 </div>
+{% else %}
+<main>
+  {{ content }}
+</main>
+{% endif %}
 
 <footer>
   &copy; {{ "now" | date: "%Y" }} Open Source Kingdom

@@ -2,12 +2,6 @@
 
 {% if section %}
 <style>
-  .layout {
-    display: flex;
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 0;
-  }
   .sidebar {
     width: 240px;
     min-width: 240px;
@@ -56,19 +50,6 @@
     border-left-color: #2980b9;
     font-weight: 500;
   }
-  .content-wrap {
-    flex: 1;
-    min-width: 0;
-  }
-  main {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 0 24px;
-  }
-  @media (max-width: 768px) {
-    .layout { flex-direction: column; }
-    .sidebar { width: 100%; min-width: 100%; border-right: none; border-bottom: 1px solid #dee2e6; }
-  }
 </style>
 
 <nav class="sidebar">
@@ -83,10 +64,4 @@
   </ul>
 </nav>
 
-<div class="content-wrap">
-  {{ content }}
-</div>
-
-{% else %}
-{{ content }}
 {% endif %}
