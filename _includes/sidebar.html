@@ -23,11 +23,11 @@
     border-bottom: 1px solid #dee2e6;
   }
 
-  .sidebar-title {
+   .sidebar li.sidebar-group > .sidebar-title {
     font-size: 15px;
     font-weight: 600;
     color: #495057;
-    padding: 12px 20px 8px;
+    padding: 4px 20px 8px;
   }
 
   .sidebar ul {
@@ -79,12 +79,14 @@
     display: flex;
     align-items: center;
     padding: 10px 12px;
+    margin: 4px 10px;
     background: #66708c;
     color: #ffffff;
     font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    text-decoration: none;
     transition: background 0.15s, color 0.15s;
   }
 
@@ -100,21 +102,6 @@
     font-size: 12px;
     color: #f8fafc;
     opacity: 0.8;
-  }
-
-   /* Make the entire card clickable for pages without subpages */
-   .sidebar li.sidebar-group:not(.has-children) {
-    position: relative;
-    cursor: pointer;
-  }
-
-   .sidebar li.sidebar-group:not(.has-children) > .sidebar-group-link {
-    position: absolute;
-    top: 14px;
-    left: 10px;
-    right: 10px;
-    bottom: 8px;
-    z-index: 1;
   }
 
    /* Active parent state */
@@ -204,10 +191,9 @@
       {% else %}
 
         <li class="sidebar-group{% if page.url == sectionPage.url %} active{% endif %}">
-          <a href="{{ sectionPage.url | relative_url }}" class="sidebar-group-link"></a>
-          <div class="sidebar-group-title">
+          <a href="{{ sectionPage.url | relative_url }}" class="sidebar-group-title">
             {{ sectionPage.title | default: sectionPage.page-id }}
-          </div>
+          </a>
         </li>
 
       {% endif %}
