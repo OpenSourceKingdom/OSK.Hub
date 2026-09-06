@@ -60,13 +60,6 @@
 </style>
 
 <nav class="sidebar">
-
-  <div style="background: yellow; color: black; padding: 10px; margin: 10px;">
-    PAGE URL: {{ page.url }}<br>
-    PAGE RELATIVE URL: {{ page.url | relative_url }}<br>
-    BASE URL: {{ site.baseurl }}
-  </div>
-
   <div class="sidebar-header">Pages</div>
 
   <div class="sidebar-title">
@@ -75,16 +68,11 @@
 
   <ul>
     {% for item in section.pages %}
-
-      {% assign item_url = item.url | relative_url %}
-      {% assign current_url = page.url | relative_url %}
-
-      <li{% if current_url == item_url %} class="active"{% endif %}>
-        <a href="{{ item_url }}">
+      <li{% if page.url == item.url %} class="active"{% endif %}>
+        <a href="{{ item.url | relative_url }}">
           {{ item.title }}
         </a>
       </li>
-
     {% endfor %}
   </ul>
 </nav>

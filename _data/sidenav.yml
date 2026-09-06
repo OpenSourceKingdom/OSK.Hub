@@ -2,40 +2,40 @@
   title: Petra
   pages:
     - title: Home
-      url: /docs/systems/petra.html
+      url: /docs/systems/petra
     - title: Framework
-      url: /docs/systems/petra/test.html
+      url: /docs/systems/petra/test
     - title: Inputs
-      url: /docs/systems/petra-inputs.html
+      url: /docs/systems/petra-inputs
     - title: Provisions
-      url: /docs/systems/petra-provisions.html
+      url: /docs/systems/petra-provisions
 
 notable-projects:
   title: Notable Projects
   pages:
     - title: DeepEquals
-      url: /docs/systems/notable-deepequals.html
+      url: /docs/systems/notable-deepequals
     - title: Outputs
-      url: /docs/systems/notable-outputs.html
+      url: /docs/systems/notable-outputs
     - title: Messages
-      url: /docs/systems/notable-messages.html
+      url: /docs/systems/notable-messages
     - title: Cryptography
-      url: /docs/systems/notable-cryptography.html
+      url: /docs/systems/notable-cryptography
     - title: Storage Service
-      url: /docs/systems/notable-storage.html
+      url: /docs/systems/notable-storage
     - title: UML Diagrams
-      url: /docs/systems/notable-uml.html
+      url: /docs/systems/notable-uml
     - title: Invoker
-      url: /docs/systems/notable-invoker.html
+      url: /docs/systems/notable-invoker
 
 contact:
   title: Contact
   pages:
     - title: Get In Touch
-      url: /docs/contact.html
+      url: /docs/contact
 
 community:
   title: Community
   pages:
     - title: Home
-      url: /docs/community/index.html
+      url: /docs/community/index
