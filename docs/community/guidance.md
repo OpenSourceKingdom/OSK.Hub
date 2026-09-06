@@ -4,7 +4,7 @@ section-id: community
 page-id: Guidance
 ---
 
-# Community
+# Guidance
 
 Welcome to the OSK community. We value collaboration, transparency, and respectful discourse.
 
