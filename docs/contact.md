@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Contact
+section: contact
 ---
 
 # Contact

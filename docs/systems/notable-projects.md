@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Notable Projects
+section: notable-projects
 ---
 
 There are a vast number of projects available in OSK. Below are some of the notable projects that can be discovered:

@@ -1,0 +1,41 @@
+﻿petra:
+  title: Petra
+  pages:
+    - title: Home
+      url: /docs/systems/petra.html
+    - title: Framework
+      url: /docs/systems/petra-framework.html
+    - title: Inputs
+      url: /docs/systems/petra-inputs.html
+    - title: Provisions
+      url: /docs/systems/petra-provisions.html
+
+notable-projects:
+  title: Notable Projects
+  pages:
+    - title: DeepEquals
+      url: /docs/systems/notable-deepequals.html
+    - title: Outputs
+      url: /docs/systems/notable-outputs.html
+    - title: Messages
+      url: /docs/systems/notable-messages.html
+    - title: Cryptography
+      url: /docs/systems/notable-cryptography.html
+    - title: Storage Service
+      url: /docs/systems/notable-storage.html
+    - title: UML Diagrams
+      url: /docs/systems/notable-uml.html
+    - title: Invoker
+      url: /docs/systems/notable-invoker.html
+
+contact:
+  title: Contact
+  pages:
+    - title: Get In Touch
+      url: /docs/contact.html
+
+community:
+  title: Community
+  pages:
+    - title: Home
+      url: /docs/community/index.html
