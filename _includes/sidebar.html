@@ -67,11 +67,12 @@
 
   <ul>
     {% for item in section.pages %}
-      <li{% if page.url == item.url %} class="active"{% endif %}>
-        <a href="{{ item.url | relative_url }}">
-          {{ item.title }}
-        </a>
-      </li>
+    {% assign expected = site.baseurl | append: item.url %}
+    <li{% if page.url == expected %} class="active"{% endif %}>
+      <a href="{{ item.url | relative_url }}">
+        {{ item.title }}
+      </a>
+    </li>
     {% endfor %}
   </ul>
 </nav>
