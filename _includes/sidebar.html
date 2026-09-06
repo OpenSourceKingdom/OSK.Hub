@@ -75,32 +75,34 @@
     overflow: hidden;
   }
 
-  /* Parent acts as a heading, not a link */
+  /* Parent acts as a non-clickable heading */
   .sidebar li.sidebar-group > .sidebar-group-title {
     display: block;
-    padding: 8px 12px;
-    background: #e2e8f0;
-    color: #334155;
+    padding: 9px 14px;
+    background: #cbd5e1; /* Enhanced distinct tint for parents */
+    color: #1e293b;
     font-size: 13px;
     font-weight: 700;
     letter-spacing: 0.1px;
-    border-left: 3px solid #94a3b8;
+    border-left: 3px solid #64748b;
+    cursor: default; /* Ensures no mouse pointer */
+    user-select: none;
   }
 
   /* Give an active parent a stronger tint */
   .sidebar li.sidebar-group.active > .sidebar-group-title {
-    background: #dbeafe;
+    background: #bfdbfe;
     color: #1e40af;
     border-left-color: #2563eb;
   }
 
   /* --------------------------------
-     Subpages
+     Subpages (Indented & Nested)
      -------------------------------- */
 
   .sidebar li.sidebar-group > ul {
     margin: 0;
-    padding: 3px 0 5px 0;
+    padding: 4px 0 6px 0;
     background: #f8fafc;
     border-left: 3px solid #cbd5e1;
   }
@@ -108,7 +110,7 @@
   .sidebar li.sidebar-group > ul li a {
     display: block;
     position: relative;
-    padding: 6px 12px 6px 25px;
+    padding: 6px 12px 6px 32px; /* Increased left padding for deeper indentation */
     color: #64748b;
     text-decoration: none;
     font-size: 13px;
@@ -122,7 +124,7 @@
   .sidebar li.sidebar-group > ul li a::before {
     content: "–";
     position: absolute;
-    left: 11px;
+    left: 15px; /* Pushed out to match new padding */
     color: #94a3b8;
   }
 
