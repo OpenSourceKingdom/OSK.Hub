@@ -86,21 +86,28 @@
      transition: background 0.15s, color 0.15s;
    }
 
-    .sidebar li.sidebar-group.has-children > .sidebar-group-title {
-     cursor: default;
-     user-select: none;
-   }
+     .sidebar li.sidebar-group.has-children > .sidebar-group-title {
+      cursor: pointer;
+      user-select: none;
+    }
 
-   /* Non-subpage items — lighter text, no dark background */
-   .sidebar li.sidebar-group:not(.has-children) > .sidebar-group-title {
-     background: transparent;
-     color: #495057;
-     font-weight: 600;
-   }
+    .sidebar li.sidebar-group.has-children > .sidebar-group-title:hover {
+      background: #4a5568;
+    }
 
-   .sidebar li.sidebar-group:not(.has-children) > .sidebar-group-title:hover {
-     background: #e9ecef;
-   }
+   /* Non-subpage items — lighter card style */
+    .sidebar li.sidebar-group:not(.has-children) > .sidebar-group-title {
+      background: #e9ecef;
+      color: #495057;
+      font-weight: 600;
+      border: 1px solid #ced4da;
+      border-radius: 4px;
+    }
+
+    .sidebar li.sidebar-group:not(.has-children) > .sidebar-group-title:hover {
+      background: #dee2e6;
+      color: #212529;
+    }
 
    /* Chevron indicator showing this section has subpages */
    .sidebar li.sidebar-group.has-children > .sidebar-group-title::before {
@@ -179,9 +186,9 @@
 
         <li class="sidebar-group has-children{% if page.url == sectionPage.url %} active{% endif %}">
 
-          <div class="sidebar-group-title">
+          <a href="{{ sectionPage.url | relative_url }}" class="sidebar-group-title">
             {{ sectionPage.title | default: sectionPage.page-id }}
-          </div>
+          </a>
 
           <ul>
             {% for subpage in sectionPage.subpages %}
