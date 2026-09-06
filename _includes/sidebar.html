@@ -1,4 +1,4 @@
-{% assign section = site.data.sidenav[page.section] %}
+{% assign sectionKey = page.section-id %}{% assign section = site.data.sidenav[sectionKey] %}
 
 {% if section %}
 

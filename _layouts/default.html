@@ -43,7 +43,7 @@
 
 {% include nav.html %}
 
-{% if page.section and site.data.sidenav[page.section] %}
+{% assign sectionKey = page.section-id %}{% if sectionKey and site.data.sidenav[sectionKey] %}
 <div style="display:flex;min-height:calc(100vh - 120px);">
   {% include sidebar.html %}
   <main style="flex:1;min-width:0;margin:0;padding:40px 32px;">
