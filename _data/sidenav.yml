@@ -17,6 +17,8 @@
 highlights:
   title: Highlights
   pages:
+    - title: Overview
+      url: /docs/systems/highlights/overview
     - title: DeepEquals
       url: /docs/systems/highlights/deep-equals
     - title: Outputs
