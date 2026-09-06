@@ -42,10 +42,10 @@ contact:
   pages:
     - page-id: contact
       title: Get In Touch
-      url: /docs/contact
+      url: /docs/about/contact
 
 community:
   title: Community
   pages:
-    - page-id: guidance
+    - page-id: Guidance
       url: /docs/community/guidance
