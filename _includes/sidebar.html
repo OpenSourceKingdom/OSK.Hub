@@ -1,6 +1,7 @@
 {% assign section = site.data.sidenav[page.section] %}
 
 {% if section %}
+
 <style>
   .sidebar {
     width: 240px;
@@ -51,9 +52,9 @@
   }
 
   .sidebar li.active a {
-    background: #e7f1ff;
-    color: #2980b9;
-    border-left-color: #2980b9;
+    background: #dbeafe;
+    color: #1d4ed8;
+    border-left-color: #2563eb;
     font-weight: 600;
   }
 </style>
@@ -67,12 +68,16 @@
 
   <ul>
     {% for item in section.pages %}
-    {% assign expected = site.baseurl | append: item.url %}
-    <li{% if page.url == expected %} class="active"{% endif %}>
-      <a href="{{ item.url | relative_url }}">
-        {{ item.title }}
-      </a>
-    </li>
+
+      {% assign current_url = page.url | remove: '.html' | remove: '/' %}
+      {% assign item_url = item.url | remove: '.html' | remove: '/' %}
+
+      <li{% if current_url == item_url %} class="active"{% endif %}>
+        <a href="{{ item.url | relative_url }}">
+          {{ item.title }}
+        </a>
+      </li>
+
     {% endfor %}
   </ul>
 </nav>
