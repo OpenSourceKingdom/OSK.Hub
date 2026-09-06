@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Cryptography
-section: highlights
+section-id: Highlights
+page-id: Cryptography
 ---
 
 # Cryptography

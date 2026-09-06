@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Modules
-section: petra
+section-id: Petra
+page-id: Modules
 ---
 
 # Modules

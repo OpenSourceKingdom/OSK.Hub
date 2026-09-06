@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Framework
-section: petra
+section-id: Petra
+page-id: Framework
 ---
 
 # Framework

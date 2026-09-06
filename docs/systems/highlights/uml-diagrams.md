@@ -1,7 +1,7 @@
 ---
 layout: default
-title: UML Diagrams
-section: highlights
+section-id: Highlights
+page-id: uml-diagrams
 ---
 
 # UML Diagrams

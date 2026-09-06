@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Provisions
-section: petra
+section-id: Petra
+page-id: Provisions
 ---
 
 # Provisions

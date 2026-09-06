@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Overview
-section: highlights
+section-id: Highlights
+page-id: Overview
 ---
 
 # Highlights

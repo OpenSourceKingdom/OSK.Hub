@@ -60,17 +60,17 @@
 </style>
 
 <nav class="sidebar">
-  <div class="sidebar-header">Pages</div>
+  <div class="sidebar-header">{{ section.header ?? "Content" }}</div>
 
   <div class="sidebar-title">
-    {{ section.title }}
+    {{ section.title ?? section.id }}
   </div>
 
   <ul>
-    {% for item in section.pages %}
-      <li{% if page.url == item.url %} class="active"{% endif %}>
-        <a href="{{ item.url | relative_url }}">
-          {{ item.title }}
+    {% for sectionPage in section.pages %}
+      <li{% if page.url == sectionPage.url %} class="active"{% endif %}>
+        <a href="{{ sectionPage.url | relative_url }}">
+          {{ sectionPage.title ?? sectionPage.page-id }}
         </a>
       </li>
     {% endfor %}

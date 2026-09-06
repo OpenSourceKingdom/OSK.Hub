@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Overview
-section: petra
+section-id: Petra
+page-id: Overview
 ---
 
 # Petra

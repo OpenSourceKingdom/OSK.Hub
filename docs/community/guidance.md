@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Guidance
-section: community
+section-id: Community
+page-id: Guidance
 ---
 
 # Community

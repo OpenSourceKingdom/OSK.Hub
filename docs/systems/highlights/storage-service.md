@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Storage Service
-section: highlights
+section-id: Highlights
+page-id: storage-service
 ---
 
 # Storage Service

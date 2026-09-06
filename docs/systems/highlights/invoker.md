@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Invoker
-section: highlights
+section-id: Highlights
+page-id: Invoker
 ---
 
 # Invoker

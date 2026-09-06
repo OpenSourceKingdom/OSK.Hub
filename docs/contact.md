@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Get In Touch
-section: contact
+section-id: Contact
+page-id: Contact
 ---
 
 # Contact

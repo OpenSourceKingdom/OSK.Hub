@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Inputs
-section: petra
+section-id: Petra
+page-id: Inputs
 ---
 
 # Inputs

@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Outputs
-section: highlights
+section-id: Highlights
+page-id: Outputs
 ---
 
 # Outputs

@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Messages
-section: highlights
+section-id: Highlights
+page-id: Messages
 ---
 
 # Messages
