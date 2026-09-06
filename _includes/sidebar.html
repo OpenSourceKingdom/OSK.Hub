@@ -72,7 +72,7 @@
    }
 
     /* Parent section title block */
-     .sidebar li.sidebar-group > .sidebar-group-title {
+     .sidebar li.sidebar-group.has-children > .sidebar-group-title {
       display: flex;
       align-items: center;
       padding: 10px 12px;
@@ -90,17 +90,17 @@
       user-select: none;
     }
 
-    /* Non-subpage items — lighter card style */
+    /* Non-subpage items — opaque card style */
     .sidebar li.sidebar-group:not(.has-children) > a.sidebar-group-title {
-      background: #e9ecef !important;
-      color: #495057 !important;
+      background: #f8f9fa !important;
+      color: #343a40 !important;
       font-weight: 600;
-      border: 1px solid #ced4da;
+      border: 1px solid #adb5bd;
       border-radius: 4px;
     }
 
     .sidebar li.sidebar-group:not(.has-children) > a.sidebar-group-title:hover {
-      background: #dee2e6 !important;
+      background: #e9ecef !important;
       color: #212529 !important;
     }
 

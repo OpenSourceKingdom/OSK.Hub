@@ -34,6 +34,7 @@ highlights:
       url: /docs/systems/highlights/cryptography
     - page-id: storage-service
       title: Storage Service
+      url: /docs/systems/highlights/storage-service
     - page-id: uml-diagrams
       title: UML Diagrams
       url: /docs/systems/highlights/uml-diagrams
