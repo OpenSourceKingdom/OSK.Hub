@@ -1,6 +1,6 @@
 ---
 layout: default
-section-id: Community
+section-id: community
 page-id: Guidance
 ---
 

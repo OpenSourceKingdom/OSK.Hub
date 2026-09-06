@@ -1,6 +1,6 @@
 ---
 layout: default
-section-id: Contact
+section-id: contact
 page-id: Contact
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: default
-section-id: Highlights
+section-id: highlights
 page-id: DeepEquals
 ---
 

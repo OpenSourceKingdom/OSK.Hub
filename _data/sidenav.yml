@@ -1,31 +1,31 @@
 ﻿petra:
-  section-id: Petra
+  title: Petra
   pages:
-    - page-id: Overview
+    - page-id: overview
       url: /docs/systems/petra/overview
-    - page-id: Framework
+    - page-id: framework
       url: /docs/systems/petra/framework
-    - page-id: Modules
+    - page-id: modules
       url: /docs/systems/petra/modules
-    - page-id: Inputs
+    - page-id: inputs
       url: /docs/systems/petra/inputs
-    - page-id: Provisions
+    - page-id: provisions
       url: /docs/systems/petra/provisions
-    - page-id: Roadmap
+    - page-id: roadmap
       url: /docs/systems/petra/roadmap
 
 highlights:
-  section-id: Highlights
+  title: Highlights
   pages:
-    - page-id: Overview
+    - page-id: overview
       url: /docs/systems/highlights/overview
-    - page-id: DeepEquals
+    - page-id: deep-equals
       url: /docs/systems/highlights/deep-equals
-    - page-id: Outputs
+    - page-id: outputs
       url: /docs/systems/highlights/outputs
-    - page-id: Messages
+    - page-id: messages
       url: /docs/systems/highlights/messages
-    - page-id: Cryptography
+    - page-id: cryptography
       url: /docs/systems/highlights/cryptography
     - page-id: storage-service
       title: Storage Service
@@ -33,18 +33,18 @@ highlights:
     - page-id: uml-diagrams
       title: UML Diagrams
       url: /docs/systems/highlights/uml-diagrams
-    - page-id: Invoker
+    - page-id: invoker
       url: /docs/systems/highlights/invoker
 
 contact:
-  section-id: Contact
+  title: Contact
   pages:
     - page-id: contact
       title: Get In Touch
       url: /docs/contact
 
 community:
-  section-id: Community
+  title: Community
   pages:
-    - page-id: Guidance
+    - page-id: guidance
       url: /docs/community/guidance
