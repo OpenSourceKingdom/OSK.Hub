@@ -70,7 +70,7 @@
     {% for sectionPage in section.pages %}
       <li{% if page.url == sectionPage.url %} class="active"{% endif %}>
         <a href="{{ sectionPage.url | relative_url }}">
-          {{ sectionPage.title ?? sectionPage.page-id }}
+          {{ sectionPage.title | default: sectionPage.page-id }}
         </a>
       </li>
     {% endfor %}
