@@ -1,3 +1,7 @@
+{% assign sectionKey = page.section-id %}{% assign section = site.data.sidenav[sectionKey] %}
+
+{% if section %}
+
 <style>
   .sidebar {
     width: 240px;
@@ -23,7 +27,7 @@
     color: #495057;
     padding: 4px 20px 12px;
     border-bottom: 1px solid #dee2e6;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
   }
 
   .sidebar ul {
@@ -32,14 +36,10 @@
     padding: 0;
   }
 
-
-  /* =========================================================
-     NORMAL TOP-LEVEL PAGES
-     ========================================================= */
-
-  .sidebar > ul > li:not(.sidebar-group) > a {
+  /* Normal pages */
+  .sidebar li a {
     display: block;
-    padding: 9px 20px;
+    padding: 8px 20px;
     color: #495057;
     text-decoration: none;
     font-size: 14px;
@@ -47,220 +47,117 @@
     transition: background 0.15s, color 0.15s;
   }
 
-  .sidebar > ul > li:not(.sidebar-group) > a:hover {
+  .sidebar li a:hover {
     background: #e9ecef;
     color: #212529;
   }
 
-  .sidebar > ul > li:not(.sidebar-group).active > a {
+  .sidebar li.active a {
     background: #dbeafe;
     color: #1d4ed8;
     border-left-color: #2563eb;
     font-weight: 600;
   }
 
+  /* =========================================
+     PAGES WITH SUBPAGES
+     ========================================= */
 
-  /* =========================================================
-     PARENT / GROUP
-     ========================================================= */
-
-  /*
-   * The entire parent/child group gets separated from
-   * neighboring top-level pages.
-   */
-  .sidebar > ul > li.sidebar-group {
-    margin: 12px 10px;
-    border: 1px solid #d1d9e2;
-    border-radius: 6px;
-    background: #f8fafc;
-    overflow: hidden;
+  .sidebar li.sidebar-group {
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
-
-  /*
-   * PARENT TITLE
-   *
-   * This is deliberately a <div>, NOT an <a>.
-   * It looks and behaves like a section heading.
-   */
-  .sidebar > ul > li.sidebar-group > .sidebar-group-title {
+  /* Parent is a heading, not a link */
+  .sidebar .sidebar-group-title {
     display: block;
-    padding: 10px 12px;
+    padding: 8px 20px;
 
-    background: #e2e8f0;
-    color: #334155;
+    background: #e2e6ea;
+    color: #343a40;
 
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 700;
 
-    border-left: 4px solid #64748b;
-
-    /* Make it obvious this isn't a link */
-    cursor: default;
-    user-select: none;
+    border-left: 3px solid #adb5bd;
   }
 
-
-  /*
-   * Give the parent a blue treatment when the current
-   * page belongs to that group.
-   */
-  .sidebar > ul > li.sidebar-group.active {
-    border-color: #bfdbfe;
-  }
-
-  .sidebar > ul > li.sidebar-group.active > .sidebar-group-title {
+  /* Slightly stronger visual treatment when
+     the current page is this parent */
+  .sidebar li.sidebar-group.active .sidebar-group-title {
     background: #dbeafe;
-    color: #1e40af;
+    color: #1d4ed8;
     border-left-color: #2563eb;
   }
 
+  /* =========================================
+     SUBPAGES
+     ========================================= */
 
-  /* =========================================================
-     CHILD / SUBPAGE CONTAINER
-     ========================================================= */
+  .sidebar li.sidebar-group > ul {
+    margin-left: 12px;
+    padding-left: 8px;
 
-  /*
-   * Children live in their own visual area.
-   */
-  .sidebar > ul > li.sidebar-group > ul {
-    position: relative;
-
-    margin: 0;
-    padding: 6px 0 7px 0;
-
-    background: #ffffff;
+    border-left: 2px solid #ced4da;
   }
 
+  .sidebar li.sidebar-group > ul li a {
+    padding: 6px 12px 6px 16px;
 
-  /*
-   * Vertical tree/guide line connecting all children.
-   */
-  .sidebar > ul > li.sidebar-group > ul::before {
-    content: "";
-
-    position: absolute;
-    top: 8px;
-    bottom: 8px;
-    left: 20px;
-
-    width: 2px;
-
-    background: #dbe3ec;
-  }
-
-
-  /*
-   * Individual child links.
-   */
-  .sidebar > ul > li.sidebar-group > ul > li > a {
-    display: block;
-    position: relative;
-
-    padding: 7px 10px 7px 34px;
-
-    color: #64748b;
-    text-decoration: none;
-
+    color: #6c757d;
     font-size: 13px;
-
-    border-left: 3px solid transparent;
-
-    transition:
-      background 0.15s,
-      color 0.15s;
   }
 
-
-  /*
-   * Small horizontal connector from the vertical
-   * tree line to each child.
-   */
-  .sidebar > ul > li.sidebar-group > ul > li > a::before {
-    content: "";
-
-    position: absolute;
-
-    left: 20px;
-    top: 50%;
-
-    width: 9px;
-    height: 1px;
-
-    background: #cbd5e1;
+  .sidebar li.sidebar-group > ul li a::before {
+    content: "– ";
+    color: #adb5bd;
   }
 
-
-  .sidebar > ul > li.sidebar-group > ul > li > a:hover {
-    background: #f1f5f9;
-    color: #334155;
+  .sidebar li.sidebar-group > ul li a:hover {
+    background: #e9ecef;
+    color: #212529;
   }
 
-
-  /*
-   * Active child.
-   */
-  .sidebar > ul > li.sidebar-group > ul > li.active > a {
-    background: #eff6ff;
+  .sidebar li.sidebar-group > ul li.active a {
+    background: #dbeafe;
     color: #1d4ed8;
     border-left-color: #2563eb;
     font-weight: 600;
-  }
-
-
-  .sidebar > ul > li.sidebar-group > ul > li.active > a::before {
-    background: #2563eb;
   }
 </style>
 
-
 <nav class="sidebar">
-
-  <div class="sidebar-header">
-    {{ section.header | default: "Content" }}
-  </div>
+  <div class="sidebar-header">{{ section.header | default: "Content" }}</div>
 
   <div class="sidebar-title">
     {{ section.title }}
   </div>
 
   <ul>
-
     {% for sectionPage in section.pages %}
 
       {% if sectionPage.subpages %}
 
-        <!-- ================================================
-             PARENT WITH CHILDREN
-             ================================================ -->
-
         <li class="sidebar-group{% if page.url == sectionPage.url %} active{% endif %}">
 
-          <!-- Intentionally NOT an <a> -->
+          <!-- Parent is intentionally not a link -->
           <div class="sidebar-group-title">
             {{ sectionPage.title | default: sectionPage.page-id }}
           </div>
 
-          <!-- CHILDREN -->
           <ul>
             {% for subpage in sectionPage.subpages %}
-
               <li{% if page.url == subpage.url %} class="active"{% endif %}>
                 <a href="{{ subpage.url | relative_url }}">
                   {{ subpage.title | default: subpage.page-id }}
                 </a>
               </li>
-
             {% endfor %}
           </ul>
 
         </li>
 
       {% else %}
-
-        <!-- ================================================
-             NORMAL TOP-LEVEL PAGE
-             ================================================ -->
 
         <li{% if page.url == sectionPage.url %} class="active"{% endif %}>
           <a href="{{ sectionPage.url | relative_url }}">
@@ -271,7 +168,7 @@
       {% endif %}
 
     {% endfor %}
-
   </ul>
-
 </nav>
+
+{% endif %}
