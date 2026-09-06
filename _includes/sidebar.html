@@ -19,16 +19,15 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #868e96;
-    padding: 0 20px 8px;
+    padding: 0 20px 12px;
+    border-bottom: 1px solid #dee2e6;
   }
 
   .sidebar-title {
     font-size: 15px;
     font-weight: 600;
     color: #495057;
-    padding: 4px 20px 12px;
-    border-bottom: 1px solid #dee2e6;
-    margin-bottom: 8px;
+    padding: 12px 20px 8px;
   }
 
   .sidebar ul {
@@ -89,22 +88,9 @@
     transition: background 0.15s, color 0.15s;
   }
 
-   .sidebar li.sidebar-group > .sidebar-group-title a {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    color: inherit;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
    .sidebar li.sidebar-group.has-children > .sidebar-group-title {
     cursor: default;
     user-select: none;
-  }
-
-   .sidebar li.sidebar-group:not(.has-children) > .sidebar-group-title {
-    cursor: pointer;
   }
 
    /* Chevron indicator showing this section has subpages */
@@ -116,8 +102,19 @@
     opacity: 0.8;
   }
 
-   .sidebar li.sidebar-group:not(.has-children) > .sidebar-group-title::before {
-    display: none;
+   /* Make the entire card clickable for pages without subpages */
+   .sidebar li.sidebar-group:not(.has-children) {
+    position: relative;
+    cursor: pointer;
+  }
+
+   .sidebar li.sidebar-group:not(.has-children) > .sidebar-group-link {
+    position: absolute;
+    top: 14px;
+    left: 10px;
+    right: 10px;
+    bottom: 8px;
+    z-index: 1;
   }
 
    /* Active parent state */
@@ -207,12 +204,10 @@
       {% else %}
 
         <li class="sidebar-group{% if page.url == sectionPage.url %} active{% endif %}">
+          <a href="{{ sectionPage.url | relative_url }}" class="sidebar-group-link"></a>
           <div class="sidebar-group-title">
-            <a href="{{ sectionPage.url | relative_url }}">
-              {{ sectionPage.title | default: sectionPage.page-id }}
-            </a>
+            {{ sectionPage.title | default: sectionPage.page-id }}
           </div>
-
         </li>
 
       {% endif %}
