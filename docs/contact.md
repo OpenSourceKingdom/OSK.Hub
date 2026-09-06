@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Contact
+title: Get In Touch
 section: contact
 ---
 

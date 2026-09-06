@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Community
+title: Guidance
 section: community
 ---
 
