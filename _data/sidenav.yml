@@ -49,6 +49,8 @@ highlights:
       url: /docs/systems/highlights/uml-diagrams
     - page-id: Invoker
       url: /docs/systems/highlights/invoker
+    - page-id: Workflows
+      url: /docs/systems/highlights/workflows
 
 about:
   title: About OSK
