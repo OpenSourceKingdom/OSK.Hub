@@ -6,7 +6,7 @@ page-id: Cryptography
 
 # Cryptography
 
-### References
+### Links
 *Source*: [![GitHub](https://img.shields.io/badge/GitHub-View_Cryptography-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Security.Cryptography) [![GitHub](https://img.shields.io/badge/GitHub-View_Aes-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Security.Cryptography.Aes) [![GitHub](https://img.shields.io/badge/GitHub-View_Rsa-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Security.Cryptography.Rsa)
 
 *Packages*: [![NuGet](https://img.shields.io/badge/NuGet-Cryptography-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/OSK.Security.Cryptography) [![NuGet](https://img.shields.io/badge/NuGet-Aes-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/OSK.Security.Cryptography.Aes) [![NuGet](https://img.shields.io/badge/NuGet-Rsa-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/OSK.Security.Cryptography.Rsa)

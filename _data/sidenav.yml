@@ -50,6 +50,8 @@ highlights:
 about:
   title: About OSK
   pages:
+    - page-id: Mission
+      url: /docs/about/mission
     - page-id: Contact
       title: Get In Touch
       url: /docs/about/contact

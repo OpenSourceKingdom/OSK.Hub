@@ -6,7 +6,7 @@ page-id: storage-service
 
 # Storage Service
 
-### References
+### Links
 *Source*: [![GitHub](https://img.shields.io/badge/GitHub-View_Storage_Abstractions-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Storage.Abstractions)
   [![GitHub](https://img.shields.io/badge/GitHub-View_Local_Storage-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Storage.Local)
 

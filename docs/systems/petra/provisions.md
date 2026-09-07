@@ -6,7 +6,7 @@ page-id: Provisions
 
 # Provisions
 
-### References
+### Links
 *Source*: [![GitHub](https://img.shields.io/badge/GitHub-View_Petra_Provisions-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Petra.Provisions)
   [![GitHub](https://img.shields.io/badge/GitHub-View_Godot_Provisions-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Petra.Godot.Provisions)
 
@@ -25,7 +25,7 @@ Furthermore, a `ProvisionSet` can be utilized to handle multiple different provi
 
 The godot provision integration serves primarily as a shared data configuration library for provisions that can be used within a godot game application. The following are key components to the integration library:
 - `ProvisionDefinition`: Defines a provision type. For example, Gold. This allows reusing the same definition across multiple game entities when configuring a scene, and configuring a provision type in a single place. Allows configuring icons, descriptions, etc. for definition data that can be referenced in-game
-- `ProvisionResource`: Utilized as a resource to specify a provision for a game entity. For example, you can set an array of provisions for a barracks entity that takes 100 gold, 25 lumber, etc. This references a definition for reusing known definitions across multiple provisions of the same type
+- `ProvisionResource`: Utilized as a resource to specify a provision for a game entity. For example, you can set an array of provisions for a barracks entity that takes 100 gold, 25 lumber, etc. This Links a definition for reusing known definitions across multiple provisions of the same type
 - `ProvisionDefinitioRepository`: Provides the ability to add a set of provision definitions to an in-game manager so that it can be included as a node in the DI container. This may be desired in some cases during runtime where you want to get the information from a shared provision definition, but don't immediately have access to it.
 
 In order for the definition repository to function, users will need to:

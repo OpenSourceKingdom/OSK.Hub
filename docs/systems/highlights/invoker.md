@@ -6,7 +6,7 @@ page-id: Invoker
 
 # Invoker
 
-### References
+### Links
 *Source*: [![GitHub](https://img.shields.io/badge/GitHub-View_Invoker-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Expressions.Invoker)
 
 *Packages*: [![NuGet](https://img.shields.io/badge/NuGet-View_Invoker-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/OSK.Expressions.Invoker)

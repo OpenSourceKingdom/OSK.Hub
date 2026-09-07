@@ -6,7 +6,7 @@ page-id: primitives
 
 # Primitives
 
-### References
+### Links
 *Source*: [![GitHub](https://img.shields.io/badge/GitHub-View_Primitives-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Petra.Godot.Primitives)
 
 *Packages*: [![NuGet](https://img.shields.io/badge/NuGet-View_Primitives-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/OSK.Petra.Godot.Primitives)

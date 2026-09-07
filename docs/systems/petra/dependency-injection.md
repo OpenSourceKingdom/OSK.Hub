@@ -6,7 +6,7 @@ page-id: dependency-injection
 
 # Dependency Injection
 
-### References
+### Links
 *Source*: [![GitHub](https://img.shields.io/badge/GitHub-View_Dependency_Injection-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Petra.DependencyInjection)
   [![GitHub](https://img.shields.io/badge/GitHub-View_Godot_Extensions-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Extensions.Petra.Godot/tree/main/src/OSK.Extensions.Petra.Godot.DependencyInjection)
 
