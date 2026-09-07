@@ -7,9 +7,11 @@ page-id: Logging
 # Logging
 
 ### References
-<div class="refs">*Source*: [![GitHub](https://img.shields.io/badge/GitHub-View_Petra_Logging-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Petra.Logging) [![GitHub](https://img.shields.io/badge/GitHub-View_Godot_Logging-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Petra.Godot.Logging)
+*Source*: [![GitHub](https://img.shields.io/badge/GitHub-View_Petra_Logging-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Petra.Logging)
+  [![GitHub](https://img.shields.io/badge/GitHub-View_Godot_Logging-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Petra.Godot.Logging)
 
-*Packages*: [![NuGet](https://img.shields.io/badge/NuGet-View_Petra_Logging-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/OSK.Petra.Logging) [![NuGet](https://img.shields.io/badge/NuGet-View_Godot_Logging-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/OSK.Petra.Godot.Logging)</div>
+*Packages*: [![NuGet](https://img.shields.io/badge/NuGet-View_Petra_Logging-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/OSK.Petra.Logging)
+  [![NuGet](https://img.shields.io/badge/NuGet-View_Godot_Logging-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/OSK.Petra.Godot.Logging)
 
 ## Summary
 

@@ -7,9 +7,11 @@ page-id: Modules
 # Modules
 
 ### References
-<div class="refs">*Source*: [![GitHub](https://img.shields.io/badge/GitHub-View_Petra_Modules-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Petra.Modules) [![GitHub](https://img.shields.io/badge/GitHub-View_Godot_Modules-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Petra.Godot.Modules)
+*Source*: [![GitHub](https://img.shields.io/badge/GitHub-View_Petra_Modules-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Petra.Modules)
+  [![GitHub](https://img.shields.io/badge/GitHub-View_Godot_Modules-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Petra.Godot.Modules)
 
-*Packages*: [![NuGet](https://img.shields.io/badge/NuGet-View_Petra_Modules-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/OSK.Petra.Modules) [![NuGet](https://img.shields.io/badge/NuGet-View_Godot_Modules-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/OSK.Petra.Godot.Modules)</div>
+*Packages*: [![NuGet](https://img.shields.io/badge/NuGet-View_Petra_Modules-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/OSK.Petra.Modules)
+  [![NuGet](https://img.shields.io/badge/NuGet-View_Godot_Modules-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/OSK.Petra.Godot.Modules)
 
 ## Summary
 
