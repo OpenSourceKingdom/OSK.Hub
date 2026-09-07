@@ -15,7 +15,9 @@ page-id: Framework
 
 The overall framework of Petra is split into numerous, isolated packages and shared logic, but in game engine implementations, it may be necessary to provide a mechanism to do a bit more and include a set of logic to build, inject source files, etc. The aim of the framework libraries is to encompass any required build processes that are needed to get a game engine integration working.
 
-As of now, the framework libraries are integration specific, and there is not an agnostic version.
+The standard package hierarchy is an engine agnostic logic library with potential game engine specific libraries. In the cases where engine specific libraries are used, they will mostly serve as configuration style libraries, but they coudl potentially offer logic enhancements where it makes sense to do so. Naming convention follows `OSK.Petra.{LibraryName}` as a core logic library with game engine integrations utilizing `OSK.Petra.{EngineName}.{LibraryName}` as the moniker.
+
+As of now, the framework build libraries are integration specific, and there is not an agnostic version.
 
 ### Godot
 

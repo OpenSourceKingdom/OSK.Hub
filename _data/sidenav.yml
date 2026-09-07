@@ -5,10 +5,16 @@
       url: /docs/systems/petra/overview
     - page-id: Framework
       url: /docs/systems/petra/framework
+    - page-id: dependency-injection
+      title: Dependency Injection
+      url: /docs/systems/petra/dependency-injection
     - page-id: Modules
       url: /docs/systems/petra/modules
-    - page-id: inputs
-      title: Inputs
+    - page-id: Logging
+      url: /docs/systems/petra/logging
+    - page-id: Primitives
+      url: /docs/systems/petra/primitives
+    - page-id: Inputs
       url: /docs/systems/petra/inputs
       subpages:
         - page-id: Architecture
