@@ -7,9 +7,9 @@ page-id: storage-service
 # Storage Service
 
 ### References
-<div style="display:table"><em>*Source*:</em> [![GitHub](https://img.shields.io/badge/GitHub-View_Storage_Abstractions-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Storage.Abstractions) | [![GitHub](https://img.shields.io/badge/GitHub-View_Local_Storage-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Storage.Local)</div>
+*Source*: [![GitHub](https://img.shields.io/badge/GitHub-View_Storage_Abstractions-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Storage.Abstractions) | [![GitHub](https://img.shields.io/badge/GitHub-View_Local_Storage-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Storage.Local)
 
-<div style="display:table"><em>*Packages*:</em> [![NuGet](https://img.shields.io/badge/NuGet-View_Storage_Abstractions-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/OSK.Storage.Abstractions) | [![NuGet](https://img.shields.io/badge/NuGet-View_Local_Storage-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/OSK.Storage.Local)</div>
+*Packages*: [![NuGet](https://img.shields.io/badge/NuGet-View_Storage_Abstractions-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/OSK.Storage.Abstractions) | [![NuGet](https://img.shields.io/badge/NuGet-View_Local_Storage-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/OSK.Storage.Local)
 
 ## Summary
 
