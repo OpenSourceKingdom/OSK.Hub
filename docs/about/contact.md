@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Contact
+section-id: about
+page-id: Contact
 ---
 
 # Contact

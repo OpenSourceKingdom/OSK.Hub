@@ -1,0 +1,68 @@
+﻿petra:
+  title: Petra (BETA)
+  pages:
+    - page-id: Overview
+      url: /docs/systems/petra/overview
+    - page-id: Framework
+      url: /docs/systems/petra/framework
+    - page-id: dependency-injection
+      title: Dependency Injection
+      url: /docs/systems/petra/dependency-injection
+    - page-id: Modules
+      url: /docs/systems/petra/modules
+    - page-id: Logging
+      url: /docs/systems/petra/logging
+    - page-id: Primitives
+      url: /docs/systems/petra/primitives
+    - page-id: Inputs
+      url: /docs/systems/petra/inputs
+#      subpages:
+#        - page-id: Architecture
+#          url: /docs/systems/petra/inputs/architecture
+    - page-id: Provisions
+      url: /docs/systems/petra/provisions
+    - page-id: probability
+      title: Probabilities (RNG)
+      url: /docs/systems/petra/probabilities
+    - page-id: Roadmap
+      url: /docs/systems/petra/roadmap
+
+highlights:
+  title: Highlights
+  pages:
+    - page-id: Overview
+      url: /docs/systems/highlights/overview
+    - page-id: deep-equals
+      title: Deep Equals
+      url: /docs/systems/highlights/deep-equals
+    - page-id: Outputs
+      url: /docs/systems/highlights/outputs
+    - page-id: Messages
+      url: /docs/systems/highlights/messages
+    - page-id: Cryptography
+      url: /docs/systems/highlights/cryptography
+    - page-id: storage-service
+      title: Storage Service
+      url: /docs/systems/highlights/storage-service
+    - page-id: uml-diagrams
+      title: UML Diagrams
+      url: /docs/systems/highlights/uml-diagrams
+    - page-id: Invoker
+      url: /docs/systems/highlights/invoker
+    - page-id: Workflows
+      url: /docs/systems/highlights/workflows
+
+about:
+  title: About OSK
+  pages:
+    - page-id: Mission
+      url: /docs/about/mission
+    - page-id: Contact
+      title: Get In Touch
+      url: /docs/about/contact
+
+community:
+  title: Community
+  pages:
+    - page-id: Guidance
+      url: /docs/community/guidance
