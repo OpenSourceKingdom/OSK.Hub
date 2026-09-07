@@ -4,7 +4,7 @@ section-id: petra
 page-id: probability
 ---
 
-# Framework
+# Probabilities
 
 ### Links
 *Source*: [![GitHub](https://img.shields.io/badge/GitHub-View_Probabilities-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Petra.Probabilities)

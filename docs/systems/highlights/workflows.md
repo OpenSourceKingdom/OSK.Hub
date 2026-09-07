@@ -4,7 +4,7 @@ section-id: highlights
 page-id: Workflows
 ---
 
-# Outputs
+# Workflows
 
 ### Links
 *Source*: [![GitHub](https://img.shields.io/badge/GitHub-View_Workflows-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Operations.Workflows)[![GitHub](https://img.shields.io/badge/GitHub-View_Godot_Workflows-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Petra.Godot.Operations.Workflows)
