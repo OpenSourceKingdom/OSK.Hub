@@ -25,7 +25,7 @@ Godot has a unique issue in that several of the main engine classes (Node/Resour
 
 There is a way around this problem, although it does require an extra framework build package which has an expected format for C# libraries to work. We'll utilize a `.targets` file and a shared build script to copy the package files into the local project's `res://` direectory, in a well-known, expected directory name: `PetraFramework`.
 
-Note: It is recommended that the project's .gitignore or similar file is updated to ignore adding the PetraFramework directory to source control. Godot will rebuild the project, so the files will be generated on any machine utilizing the framework build scripts and thus does not need to be stored.
+Petra's godot projects will typically set `Resource` style, configuration data structures in a `Data` directory, while placing `Node` style, game runtime, assets into a `Scripts` directory.
 
 #### Integrating Build Targets
 
