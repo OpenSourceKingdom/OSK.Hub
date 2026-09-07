@@ -7,9 +7,9 @@ page-id: Inputs
 # Inputs
 
 ### References
-*Source*: [![GitHub](https://img.shields.io/badge/GitHub-View_Petra_Inputs-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Petra.Inputs) [![GitHub](https://img.shields.io/badge/GitHub-View_Godot_Inputs-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Petra.Godot.Inputs)
+<div class="refs">*Source*: [![GitHub](https://img.shields.io/badge/GitHub-View_Petra_Inputs-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Petra.Inputs) [![GitHub](https://img.shields.io/badge/GitHub-View_Godot_Inputs-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Petra.Godot.Inputs)
 
-*Packages*: [![NuGet](https://img.shields.io/badge/NuGet-View_Petra_Inputs-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/OSK.Petra.Inputs) [![NuGet](https://img.shields.io/badge/NuGet-View_Godot_Inputs-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/OSK.Petra.Godot.Inputs)
+*Packages*: [![NuGet](https://img.shields.io/badge/NuGet-View_Petra_Inputs-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/OSK.Petra.Inputs) [![NuGet](https://img.shields.io/badge/NuGet-View_Godot_Inputs-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/OSK.Petra.Godot.Inputs)</div>
 
 ## Summary
 

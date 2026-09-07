@@ -7,9 +7,9 @@ page-id: Framework
 # Framework
 
 ### References
-*Source*: [![GitHub](https://img.shields.io/badge/GitHub-View_Framework-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Petra.Godot.Framework)
+<div class="refs">*Source*: [![GitHub](https://img.shields.io/badge/GitHub-View_Framework-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Petra.Godot.Framework)
 
-*Packages*: [![NuGet](https://img.shields.io/badge/NuGet-View_Framework-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/OSK.Petra.Godot.Framework.Build)
+*Packages*: [![NuGet](https://img.shields.io/badge/NuGet-View_Framework-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/OSK.Petra.Godot.Framework.Build)</div>
 
 ## Summary
 
