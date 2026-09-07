@@ -21,6 +21,9 @@
 #          url: /docs/systems/petra/inputs/architecture
     - page-id: Provisions
       url: /docs/systems/petra/provisions
+    - page-id: probability
+      title: Probabilities (RNG)
+      url: /docs/systems/petra/probabilities
     - page-id: Roadmap
       url: /docs/systems/petra/roadmap
 
