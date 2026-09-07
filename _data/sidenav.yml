@@ -16,9 +16,9 @@
       url: /docs/systems/petra/primitives
     - page-id: Inputs
       url: /docs/systems/petra/inputs
-      subpages:
-        - page-id: Architecture
-          url: /docs/systems/petra/inputs/architecture
+#      subpages:
+#        - page-id: Architecture
+#          url: /docs/systems/petra/inputs/architecture
     - page-id: Provisions
       url: /docs/systems/petra/provisions
     - page-id: Roadmap
