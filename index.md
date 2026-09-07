@@ -6,9 +6,9 @@ title: OSK.Hub
 # OSK.Hub
 
 ### References
-*Source*: [![GitHub](https://img.shields.io/badge/GitHub-View_Repo-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Hub)
+*Source*: [![GitHub](https://img.shields.io/badge/GitHub-View_Hub-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Hub)
 
-*Packages*: [![NuGet](https://img.shields.io/badge/NuGet-Package-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/?q=OSK.)
+*Packages*: [![NuGet](https://img.shields.io/badge/NuGet-View_OSK_Packages-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/?q=OSK.)
 
 ## Summary
 
