@@ -7,9 +7,11 @@ page-id: dependency-injection
 # Dependency Injection
 
 ### References
-*Source*: [![GitHub](https://img.shields.io/badge/GitHub-View_Dependency_Injection-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Petra.DependencyInjection) [![GitHub](https://img.shields.io/badge/GitHub-View_Godot_Extensions-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Extensions.Petra.Godot/tree/main/src/OSK.Extensions.Petra.Godot.DependencyInjection)
+*Source*: [![GitHub](https://img.shields.io/badge/GitHub-View_Dependency_Injection-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Petra.DependencyInjection)
+  [![GitHub](https://img.shields.io/badge/GitHub-View_Godot_Extensions-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Extensions.Petra.Godot/tree/main/src/OSK.Extensions.Petra.Godot.DependencyInjection)
 
-*Packages*: [![NuGet](https://img.shields.io/badge/NuGet-View_Framework-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/OSK.Petra.DependencyInjection) [![NuGet](https://img.shields.io/badge/NuGet-View_Godot_Extensions-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/OSK.Extensions.Petra.Godot.DependencyInjection)
+*Packages*: [![NuGet](https://img.shields.io/badge/NuGet-View_Framework-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/OSK.Petra.DependencyInjection)
+  [![NuGet](https://img.shields.io/badge/NuGet-View_Godot_Extensions-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/OSK.Extensions.Petra.Godot.DependencyInjection)
 
 ## Summary
 
