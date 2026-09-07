@@ -7,9 +7,9 @@ page-id: Outputs
 # Outputs
 
 ### References
-*Source*: [![GitHub](https://img.shields.io/badge/GitHub-View_Outputs-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Operations.Outputs)
+<div style="display:table"><em>*Source*:</em> [![GitHub](https://img.shields.io/badge/GitHub-View_Outputs-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Operations.Outputs)</div>
 
-*Packages*: [![NuGet](https://img.shields.io/badge/NuGet-View_Outputs-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/OSK.Operations.Outputs)
+<div style="display:table"><em>*Packages*:</em> [![NuGet](https://img.shields.io/badge/NuGet-View_Outputs-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/OSK.Operations.Outputs)</div>
 
 ## Summary
 

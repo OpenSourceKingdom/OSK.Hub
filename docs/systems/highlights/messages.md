@@ -7,9 +7,9 @@ page-id: Messages
 # Messages
 
 ### References
-*Source*: [![GitHub](https://img.shields.io/badge/GitHub-View_Messages-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Messages)
+<div style="display:table"><em>*Source*:</em> [![GitHub](https://img.shields.io/badge/GitHub-View_Messages-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Messages)</div>
 
-*Packages*: [![NuGet](https://img.shields.io/badge/NuGet-View_Message_Abstractions-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/OSK.Messages.Abstractions) | [![NuGet](https://img.shields.io/badge/NuGet-View_Messaging-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/OSK.Messages.Messaging) | [![NuGet](https://img.shields.io/badge/NuGet-View_Messenger_Pigeons-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/OSK.Messages.Couriers.Pigeons)
+<div style="display:table"><em>*Packages*:</em> [![NuGet](https://img.shields.io/badge/NuGet-View_Message_Abstractions-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/OSK.Messages.Abstractions) | [![NuGet](https://img.shields.io/badge/NuGet-View_Messaging-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/OSK.Messages.Messaging) | [![NuGet](https://img.shields.io/badge/NuGet-View_Messenger_Pigeons-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/OSK.Messages.Couriers.Pigeons)</div>
 
 ## Summary
 

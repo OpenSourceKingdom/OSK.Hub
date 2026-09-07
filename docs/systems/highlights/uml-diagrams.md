@@ -7,9 +7,9 @@ page-id: uml-diagrams
 # UML Diagrams
 
 ### References
-*Source*: [![GitHub](https://img.shields.io/badge/GitHub-View_UML-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.UML)
+<div style="display:table"><em>*Source*:</em> [![GitHub](https://img.shields.io/badge/GitHub-View_UML-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.UML)</div>
 
-*Packages*: [![NuGet](https://img.shields.io/badge/NuGet-View_UML-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/OSK.UML)
+<div style="display:table"><em>*Packages*:</em> [![NuGet](https://img.shields.io/badge/NuGet-View_UML-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/OSK.UML)</div>
 
 ## Summary
 
