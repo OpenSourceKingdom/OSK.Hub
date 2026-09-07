@@ -7,9 +7,9 @@ page-id: Provisions
 # Provisions
 
 ### References
-*Source*: [![GitHub](https://img.shields.io/badge/GitHub-View_Petra_Provisions-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Petra.Provisions) | [![GitHub](https://img.shields.io/badge/GitHub-View_Godot_Provisions-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Petra.Godot.Provisions)
+*Source*: [![GitHub](https://img.shields.io/badge/GitHub-View_Petra_Provisions-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Petra.Provisions) [![GitHub](https://img.shields.io/badge/GitHub-View_Godot_Provisions-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Petra.Godot.Provisions)
 
-*Packages*: [![NuGet](https://img.shields.io/badge/NuGet-View_Petra_Provisions-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/OSK.Petra.Provisions) | [![NuGet](https://img.shields.io/badge/NuGet-View_Godot_Provisions-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/OSK.Petra.Godot.Provisions)
+*Packages*: [![NuGet](https://img.shields.io/badge/NuGet-View_Petra_Provisions-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/OSK.Petra.Provisions) [![NuGet](https://img.shields.io/badge/NuGet-View_Godot_Provisions-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/OSK.Petra.Godot.Provisions)
 
 ## Summary
 
