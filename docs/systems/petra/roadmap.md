@@ -24,6 +24,7 @@ Petra has on-going development and will eventually encompass a large swath of ga
 - **Modules** — Isolated scenes/levels for a game engine that allows sharing logic and/or DI
 - **Inputs** — Input processing and response handling for various action definitions configured by an application
 - **Probabilities** — Handles RNG in game applications and simulates dice rolls or chance/luck style checks
+- **Asset Management** — Handles instantiating individual game entities and levels, as well as initializing game services
 
 ### 🚧 In Progress/Alpha
 
@@ -36,7 +37,6 @@ Petra has on-going development and will eventually encompass a large swath of ga
 - **Engagements** — Handles battle logic between multiple game entities (1v1, or multiple combantants) in various ways and determining damage incurred on or deflected from a target
 - **Vision Maps** — Performs sight visibility calculations for game entities and teams of players, as well as rendering visibility for fog of war and minimap scenarios
 - **Game Runtime** — Provides information about the game runtime as well as helpful game managers to facilitate managing various aspects of a game
-- **Asset Management** — Handles instantiating individual game entities and levels, as well as initializing game services
 - **Calculators** — Performs various math calculations and data tracking for economy games (e.g inflation logic)
 - **Contributions** — Support library to handle defining and displaying credits/contributions of individuals/organizations
 
