@@ -26,6 +26,10 @@
     - page-id: probability
       title: Probabilities (RNG)
       url: /docs/systems/petra/probabilities
+    - page-id: Math
+      url: /docs/systems/petra/math
+    - page-id: Acquisition
+      url: /docs/systems/petra/acquisition
     - page-id: Roadmap
       url: /docs/systems/petra/roadmap
 
