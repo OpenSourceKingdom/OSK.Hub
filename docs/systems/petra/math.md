@@ -7,9 +7,9 @@ page-id: Math
 # Math
 
 ### Links
-*Source*: [![GitHub](https://img.shields.io/badge/GitHub-View_Petra_Math-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Petra.Math) [![GitHub](https://img.shields.io/badge/GitHub-View_Petra_Math-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Petra.Godot.Math)
+*Source*: [![GitHub](https://img.shields.io/badge/GitHub-View_Petra_Math-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Petra.Math) [![GitHub](https://img.shields.io/badge/GitHub-View_Godot_Math-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Petra.Godot.Math)
 
-*Packages*: [![NuGet](https://img.shields.io/badge/NuGet-View_Petra_Math-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/OSK.Petra.Math) [![NuGet](https://img.shields.io/badge/NuGet-View_Petra_Math-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/OSK.Petra.Godot.Math)
+*Packages*: [![NuGet](https://img.shields.io/badge/NuGet-View_Petra_Math-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/OSK.Petra.Math) [![NuGet](https://img.shields.io/badge/NuGet-View_Godot_Math-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/OSK.Petra.Godot.Math)
 
 ## Summary
 
