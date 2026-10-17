@@ -25,19 +25,19 @@ Petra has on-going development and will eventually encompass a large swath of ga
 - **Inputs** — Input processing and response handling for various action definitions configured by an application
 - **Probabilities** — Handles RNG in game applications and simulates dice rolls or chance/luck style checks
 - **Asset Management** — Handles instantiating individual game entities and levels, as well as initializing game services
+- **Acquisitions** — Manages queue systems (build, training, research, etc.) and related tech trees in various configurations (repeated unlock, tech tree unlock, etc.) and providing mechanisms to manage the acquisitions as a user interacts with the application
+- **Math** — Performs various math calculations, functions, and adjustments for economy games (e.g inflation logic)
 
 ### 🚧 In Progress/Alpha
 
 - **Ability/Effect Management** — System for defining and triggering in-game abilities and their effects. Handles targeting various game entities.
 - **Game Experiences** — Handles creating and managing game quests, story, etc. style narratives and progressing a game through an experience
-- **Acquisitions** — Manages queue systems (build, training, research, etc.) and related tech trees in various configurations (repeated unlock, tech tree unlock, etc.) and providing mechanisms to manage the acquisitions as a user interacts with the application
 - **Achievements** — Handles integrating with various achievement provides (Google, Apple, Steam, Xbox, etc.) and managing progress tracking of the achievements in an application
 - **Audio** — Provides a mechanism to create and run various audio files in a game application and tracking 3D sounds with game entities. 
 - **Settings** — A system that will handle storing, retrieving, and apply settings dynamically across types. Will provide UI capability for user interaction
 - **Engagements** — Handles battle logic between multiple game entities (1v1, or multiple combantants) in various ways and determining damage incurred on or deflected from a target
 - **Vision Maps** — Performs sight visibility calculations for game entities and teams of players, as well as rendering visibility for fog of war and minimap scenarios
 - **Game Runtime** — Provides information about the game runtime as well as helpful game managers to facilitate managing various aspects of a game
-- **Calculators** — Performs various math calculations and data tracking for economy games (e.g inflation logic)
 - **Contributions** — Support library to handle defining and displaying credits/contributions of individuals/organizations
 
 ### 📐 Planned
