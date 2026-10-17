@@ -1,15 +1,15 @@
 ---
 layout: default
 section-id: petra
-page-id: Acquisition
+page-id: Acquisitions
 ---
 
 # Acquisition
 
 ### Links
-*Source*: [![GitHub](https://img.shields.io/badge/GitHub-View_Petra_Acquisition-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Petra.Acquisition) [![GitHub](https://img.shields.io/badge/GitHub-View_Godot_Acquisition-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Petra.Godot.Acquisition)
+*Source*: [![GitHub](https://img.shields.io/badge/GitHub-View_Petra_Acquisitions-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Petra.Acquisitions) [![GitHub](https://img.shields.io/badge/GitHub-View_Godot_Acquisitions-black?style=flat&logo=github)](https://github.com/OpenSourceKingdom/OSK.Petra.Godot.Acquisitions)
 
-*Packages*: [![NuGet](https://img.shields.io/badge/NuGet-View_Petra_Acquisition-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/OSK.Petra.Acquisition) [![NuGet](https://img.shields.io/badge/NuGet-View_Godot_Acquisition-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/OSK.Petra.Godot.Acquisition)
+*Packages*: [![NuGet](https://img.shields.io/badge/NuGet-View_Petra_Acquisitions-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/OSK.Petra.Acquisitions) [![NuGet](https://img.shields.io/badge/NuGet-View_Godot_Acquisitions-blue?style=flat&logo=nuget)](https://www.nuget.org/packages/OSK.Petra.Godot.Acquisitions)
 
 ## Summary
 

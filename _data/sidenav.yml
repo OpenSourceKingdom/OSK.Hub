@@ -28,8 +28,8 @@
       url: /docs/systems/petra/probabilities
     - page-id: Math
       url: /docs/systems/petra/math
-    - page-id: Acquisition
-      url: /docs/systems/petra/acquisition
+    - page-id: Acquisitions
+      url: /docs/systems/petra/acquisitions
     - page-id: Roadmap
       url: /docs/systems/petra/roadmap
 
