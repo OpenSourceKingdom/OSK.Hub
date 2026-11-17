@@ -27,11 +27,11 @@ Petra has on-going development and will eventually encompass a large swath of ga
 - **Asset Management** — Handles instantiating individual game entities and levels, as well as initializing game services
 - **Acquisitions** — Manages queue systems (build, training, research, etc.) and related tech trees in various configurations (repeated unlock, tech tree unlock, etc.) and providing mechanisms to manage the acquisitions as a user interacts with the application
 - **Math** — Performs various math calculations, functions, and adjustments for economy games (e.g inflation logic)
+- **Experiences** — Handles creating and managing game quests, story, etc. style narratives and progressing a game through an experience
 
 ### 🚧 In Progress/Alpha
 
 - **Ability/Effect Management** — System for defining and triggering in-game abilities and their effects. Handles targeting various game entities.
-- **Game Experiences** — Handles creating and managing game quests, story, etc. style narratives and progressing a game through an experience
 - **Achievements** — Handles integrating with various achievement provides (Google, Apple, Steam, Xbox, etc.) and managing progress tracking of the achievements in an application
 - **Audio** — Provides a mechanism to create and run various audio files in a game application and tracking 3D sounds with game entities. 
 - **Settings** — A system that will handle storing, retrieving, and apply settings dynamically across types. Will provide UI capability for user interaction
